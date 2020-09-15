@@ -1,0 +1,20 @@
+header.header {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 101;
+
+  .stripe {
+    background: rgb(89,165,216);
+    background: linear-gradient(90deg, rgba(89,165,216,1) 5%, rgba(255,209,102,1) 20%, rgba(6,214,160,1) 35%, rgba(237,71,71,1) 50%, rgba(89,165,216,1) 65%, rgba(255,209,102,1) 80%, rgba(6,214,160,1) 95%);
+    height: 6px;
+    width: 100%;
+  }
+
+  .btn-menu,
+  .header-spacer {
+    width: 34px;
+  }
+}

@@ -48,6 +48,15 @@ module.exports = {
         ],
         display: 'swap'
       }
+    },
+    {
+      resolve: `gatsby-alias-imports`,
+      options: {
+        aliases: {
+          styles: `src/styles`,
+          images: `src/images`
+        }
+      }
     }
   ],
 }

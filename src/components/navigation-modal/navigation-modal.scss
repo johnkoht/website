@@ -1,0 +1,19 @@
+.navigation-modal {
+  @apply flex;
+  @apply justify-center;
+  @apply items-center;
+  height: 100%;
+  width: 100%;
+
+  ul.nav {}
+
+  ul.nav li a {
+    color: theme("colors.navy");
+  }
+
+  .btn-close {
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+  }
+}

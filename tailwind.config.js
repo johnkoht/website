@@ -5,7 +5,11 @@ module.exports = {
   },
   purge: ["./src/**/*.js", "./src/**/*.jsx", "./src/**/*.ts", "./src/**/*.tsx"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundOpacity: {
+        '90': '0.95'
+      }
+    },
     screens: {
       "lg": "1340px"
     },
