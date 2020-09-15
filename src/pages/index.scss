@@ -1,0 +1,24 @@
+@import "../styles/utils/utils.angle";
+
+.hero {
+  @include angle(after, false, 5deg);
+  position: relative;
+  z-index: 1;
+  height: 1200px;
+  width: 100%;
+}
+
+.hero-content {
+  padding-top: 350px;
+
+  h1 {
+    color: theme("colors.gray.900");
+    font-family: theme("fontFamily.serif");
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 4.8rem;
+    margin-bottom: 1.25rem;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+}

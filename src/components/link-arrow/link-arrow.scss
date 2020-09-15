@@ -1,0 +1,16 @@
+.link-arrow {
+  display: inline;
+  color: theme("colors.blue");
+  font-size: 16px;
+  line-height: 1;
+  vertical-align: middle;
+
+  img {
+    display: inline;
+    margin-right: 5px;
+  }
+}
+
+.link-arrow.inverted {
+  color: theme("colors.gray.100");
+}

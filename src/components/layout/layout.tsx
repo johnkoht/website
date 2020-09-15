@@ -7,7 +7,11 @@ import Footer from "components/footer"
 
 import "./layout.scss"
 
-const Layout = ({ children }) => {
+interface LayoutProps {
+  children: node
+}
+
+const Layout = ({ children }: LayoutProps) => {
   return (
     <>
       <Header />
@@ -15,10 +19,6 @@ const Layout = ({ children }) => {
       <Footer />
     </>
   )
-}
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
 }
 
 export default Layout

@@ -6,11 +6,11 @@ import Navigation from "components/navigation-modal"
 import "./header.scss"
 
 const Header = () => (
-  <header class="header">
-    <div class="stripe"></div>
+  <header className="header">
+    <div className="stripe"></div>
 
-    <div class="header-inner flex items-center px-10 py-6">
-      <div class="header-spacer"></div>
+    <div className="header-inner flex items-center px-10 py-6">
+      <div className="header-spacer"></div>
 
       <Link to="/" className="ml-auto header-brand">
         <img src={logo} alt="John Koht Logo" />
