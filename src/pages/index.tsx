@@ -41,8 +41,6 @@ const IndexPage = ({data}) => (
       <div className="hero-content max-w-6xl">
         <h1>Hi, I’m John Koht, a full-stack product builder<br/> from Chicago with experience building<br/> impactful products &amp; teams.</h1>
         <LinkArrow url="/about/" text="Learn more about me" />
-
-        <LinkArrow url="/about" text="Learn more about me" invert="true" />
       </div>
     </div>
 
