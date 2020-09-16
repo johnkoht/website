@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import { graphql } from "gatsby"
 
 import Layout from "components/layout/layout"
 import Image from "components/image"
@@ -8,7 +9,30 @@ import LinkArrow from "components/link-arrow"
 
 import "./index.scss"
 
-const IndexPage = () => (
+export const query = graphql`
+  {
+    allWork {
+      edges {
+        node {
+          description
+          client {
+            company
+            industry
+            logo
+          }
+          id
+          image
+          roles
+          title
+          type
+          url
+        }
+      }
+    }
+  }
+`
+
+const IndexPage = ({data}) => (
   <Layout>
     <SEO title="Home" />
 
@@ -20,6 +44,15 @@ const IndexPage = () => (
         <LinkArrow url="/about" text="Learn more about me" invert="true" />
       </div>
     </div>
+
+    {JSON.stringify(data)}
+
+    {data.allWork.edges.map(({ work }) => (
+      <div>
+        <strong>boom: </strong> {work.id}
+      </div>
+    ))}
+
   </Layout>
 )
 

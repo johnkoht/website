@@ -1,3 +1,24 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
+// const workSchema = {
+//   work: `
+//     id: String
+//     type: String
+//     title: String
+//     description: String
+//     image: String
+//     url: String
+//     roles: Array
+//   `,
+//   client: `
+//     company: String
+//     logo: String
+//     industry: String
+//   `
+// }
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -55,6 +76,29 @@ module.exports = {
         aliases: {
           styles: `src/styles`,
           images: `src/images`
+        }
+      }
+    },
+    {
+      resolve: "gatsby-source-custom-api",
+      options: {
+        url: `${process.env.API_URL}/work`,
+        rootKey: "work",
+        schemas: {
+          work: `
+            id: String
+            type: String
+            title: String
+            description: String
+            image: String
+            url: String
+            roles: [String]
+          `,
+          client: `
+            company: String
+            logo: String
+            industry: String
+          `
         }
       }
     }
