@@ -3,7 +3,6 @@
 .hero {
   @include angle(after, false, 5deg);
   position: relative;
-  z-index: 1;
   height: 1200px;
   width: 100%;
 }
@@ -21,4 +20,10 @@
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
   }
+}
+
+.work-container {
+  position: relative;
+  margin-top: -300px;
+  z-index: 11;
 }

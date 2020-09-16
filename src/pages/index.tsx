@@ -6,6 +6,7 @@ import Layout from "components/layout/layout"
 import Image from "components/image"
 import SEO from "components/seo"
 import LinkArrow from "components/link-arrow"
+import WorkCard from "components/work-card"
 
 import "./index.scss"
 
@@ -45,13 +46,21 @@ const IndexPage = ({data}) => (
       </div>
     </div>
 
-    {JSON.stringify(data)}
-
-    {data.allWork.edges.map(({ work }) => (
-      <div>
-        <strong>boom: </strong> {work.id}
-      </div>
-    ))}
+    <div class="container mx-auto work-container">
+      {data.allWork.edges.map(({ node }) => (
+        <WorkCard
+          key={node.id}
+          id={node.id}
+          title={node.title}
+          description={node.description}
+          client={node.client}
+          type={node.type}
+          url={node.url}
+          image={node.image}
+          roles={node.roles}>
+        </WorkCard>
+      ))}
+    </div>
 
   </Layout>
 )

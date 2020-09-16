@@ -65,7 +65,7 @@ module.exports = {
       options: {
         fonts: [
           `Merriweather\:400`,
-          `Noto Sans\:400,700`
+          `Open Sans\:300,400,700,800,900`
         ],
         display: 'swap'
       }

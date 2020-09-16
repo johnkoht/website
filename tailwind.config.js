@@ -16,9 +16,9 @@ module.exports = {
 
     fontFamily: {
       display: ['Merriweather', 'sans-serif'],
-      body: ['Noto Sans', 'sans-serif'],
+      body: ['Open Sans', 'sans-serif'],
       sans: [
-        'Noto Sans',
+        'Open Sans',
         'system-ui',
         '-apple-system',
         'BlinkMacSystemFont',
