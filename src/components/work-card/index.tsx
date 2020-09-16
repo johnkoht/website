@@ -35,16 +35,16 @@ const WorkCard = ({
   return (
     <div className={"work-card " + workClass} id={id} key={id}>
       {image != null &&
-        <div class="work-card-image" style={{backgroundImage: "url(" + image + ")"}} />
+        <div className="work-card-image" style={{backgroundImage: "url(" + image + ")"}} />
       }
 
-      <div class="work-card-content">
-        <div class="work-card-logo">
+      <div className="work-card-content">
+        <div className="work-card-logo">
           <img src={client.logo} alt={`${client.company} logo`} />
         </div>
 
-        <div class="work-card-details">
-          <h2>{title}</h2>
+        <div className="work-card-details">
+          <h3>{title}</h3>
           <p>{description}</p>
 
           {url != null &&
@@ -53,7 +53,7 @@ const WorkCard = ({
 
         </div>
 
-        <div class="work-card-roles">
+        <div className="work-card-roles">
           <h4>Roles</h4>
           <ul>
             {roles.map(role => (

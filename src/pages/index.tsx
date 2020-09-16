@@ -1,12 +1,12 @@
 import React from "react"
-import { Link } from "gatsby"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 import Layout from "components/layout/layout"
 import Image from "components/image"
 import SEO from "components/seo"
 import LinkArrow from "components/link-arrow"
 import WorkCard from "components/work-card"
+import Photo from "components/photo"
 
 import "./index.scss"
 
@@ -30,7 +30,17 @@ export const query = graphql`
         }
       }
     }
-  }
+    allPhotos {
+      edges {
+        node {
+          id
+          image
+          url
+          description
+        }
+      }
+    }
+  },
 `
 
 const IndexPage = ({data}) => (
@@ -44,7 +54,7 @@ const IndexPage = ({data}) => (
       </div>
     </div>
 
-    <div class="container mx-auto work-container">
+    <div class="container mx-auto work-container pb-40">
       {data.allWork.edges.map(({ node }) => (
         <WorkCard
           key={node.id}
@@ -60,6 +70,25 @@ const IndexPage = ({data}) => (
       ))}
     </div>
 
+    <div class="bg-gray-100 py-40">
+      <div class="container mx-auto">
+        <div class="mb-20">
+          <h2 className="mb-2">I like taking photos–whether I'm at home,<br class="invisible lg:visible" /> walking around Chicago, or traveling.</h2>
+          <LinkArrow url="/photos/" text="View my shots" />
+        </div>
+
+        <div class="photo-gallery">
+          {data.allPhotos.edges.map(({ node }) => (
+            <Photo
+              id={node.id}
+              description={node.description}
+              image={node.image}
+              url={node.url}>
+            </Photo>
+          ))}
+        </div>
+      </div>
+    </div>
   </Layout>
 )
 

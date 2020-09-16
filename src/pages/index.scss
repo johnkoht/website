@@ -27,3 +27,22 @@
   margin-top: -300px;
   z-index: 11;
 }
+
+.photo-gallery {
+  display: flex;
+  flex-flow: column wrap;
+  height: 1280px;
+
+  /* Re-order items into rows */
+  .photo-item:nth-child(3n+1) { order: 1; }
+  .photo-item:nth-child(3n+2) { order: 2; }
+  .photo-item:nth-child(3n)   { order: 3; }
+
+  &::before,
+  &::after {
+    content: "";
+    flex-basis: 100%;
+    width: 0;
+    order: 2;
+  }
+}
