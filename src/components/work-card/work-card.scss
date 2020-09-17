@@ -17,7 +17,7 @@
     @apply shadow-xl;
   }
 
-  @screen md {
+  @screen lg {
     height: 900px;
   }
 
@@ -35,6 +35,10 @@
   z-index: 5;
 
   @screen md {
+    padding: 2.5rem;
+  }
+
+  @screen lg {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -50,7 +54,7 @@
     line-height: 1.2;
     margin-bottom: 1rem;
 
-    @screen md {
+    @screen lg {
       font-size: 70px;
     }
   }
@@ -60,7 +64,7 @@
     font-weight: 300;
     line-height: 1.4;
 
-    @screen md {
+    @screen lg {
       font-size: 18px;
     }
   }
@@ -88,7 +92,7 @@
     font-weight: 300;
   }
 
-  @screen md {
+  @screen lg {
     margin-top: 0;
   }
 }
@@ -100,7 +104,7 @@
     height: 60px;
   }
 
-  @screen md {
+  @screen lg {
     margin-bottom: 0;
 
     img {
@@ -131,7 +135,7 @@
     z-index: 2;
   }
 
-  @screen md {
+  @screen lg {
     &:after {
       content: none;
     }
@@ -152,7 +156,7 @@
   .work-card-image {
     background-position: top center;
 
-    @screen md {
+    @screen lg {
       background-position: center right 8%;
     }
   }
@@ -166,7 +170,7 @@
   .work-card-image {
     background-position: top center;
 
-    @screen md {
+    @screen lg {
       background-position: center right;
     }
   }
