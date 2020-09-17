@@ -49,12 +49,12 @@ const IndexPage = ({data}) => (
 
     <div className="hero bg-gray-100 flex justify-center">
       <div className="hero-content max-w-6xl">
-        <h1>Hi, I’m John Koht, a full-stack product builder<br/> from Chicago with experience building<br/> impactful products &amp; teams.</h1>
+        <h1>Hi, I’m John Koht, a full-stack product builder<br class="hidden lg:block" /> from Chicago with experience building<br class="hidden lg:block" /> impactful products &amp; teams.</h1>
         <LinkArrow url="/about/" text="Learn more about me" />
       </div>
     </div>
 
-    <div class="container mx-auto work-container pb-40">
+    <div class="container mx-auto work-container px-4 md:px-0 pb-20 md:pb-40">
       {data.allWork.edges.map(({ node }) => (
         <WorkCard
           key={node.id}
@@ -70,10 +70,10 @@ const IndexPage = ({data}) => (
       ))}
     </div>
 
-    <div class="bg-gray-100 py-40">
+    <div class="bg-gray-100 px-4 md:px-0 py-20 md:py-40">
       <div class="container mx-auto">
-        <div class="mb-20">
-          <h2 className="mb-2">I like taking photos–whether I'm at home,<br class="invisible lg:visible" /> walking around Chicago, or traveling.</h2>
+        <div class="mb-10 md:mb-20">
+          <h2 className="mb-2">I like taking photos–whether I'm at home,<br class="hidden lg:block" /> walking around Chicago, or traveling.</h2>
           <LinkArrow url="/photos/" text="View my shots" />
         </div>
 

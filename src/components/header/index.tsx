@@ -9,7 +9,7 @@ const Header = () => (
   <header className="header">
     <div className="stripe"></div>
 
-    <div className="header-inner flex items-center px-10 py-6">
+    <div className="header-inner flex items-center px-4 sm:px-10 py-4 sm:py-6">
       <div className="header-spacer"></div>
 
       <Link to="/" className="ml-auto header-brand">

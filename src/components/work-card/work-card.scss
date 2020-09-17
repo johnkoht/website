@@ -7,7 +7,7 @@
   @apply duration-300;
   background-color: theme("colors.navy");
   margin-bottom: 3rem;
-  height: 900px;
+  height: auto;
   width: 100%;
   position: relative;
 
@@ -16,32 +16,53 @@
     @apply duration-500;
     @apply shadow-xl;
   }
+
+  @screen md {
+    height: 900px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .work-card-content {
   color: theme("colors.white");
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   height: 100%;
-  width: 575px;
-  padding: 60px 0 60px 90px;
+  width: 100%;
+  padding: 1.5rem;
   position: relative;
   z-index: 5;
+
+  @screen md {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 60px 0 60px 90px;
+    width: 575px;
+  }
 }
 
 .work-card-details {
   h3 {
-    font-size: 70px;
+    font-size: 40px;
     font-weight: 800;
     line-height: 1.2;
     margin-bottom: 1rem;
+
+    @screen md {
+      font-size: 70px;
+    }
   }
 
   p {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     line-height: 1.4;
+
+    @screen md {
+      font-size: 18px;
+    }
   }
 
   a {
@@ -51,6 +72,8 @@
 }
 
 .work-card-roles {
+  margin-top: 2.5rem;
+
   h4 {
     font-size: 15px;
     font-weight: 700;
@@ -64,17 +87,55 @@
     font-size: 15px;
     font-weight: 300;
   }
+
+  @screen md {
+    margin-top: 0;
+  }
+}
+
+.work-card-logo {
+  margin-bottom: 2.5rem;
+
+  img {
+    height: 60px;
+  }
+
+  @screen md {
+    margin-bottom: 0;
+
+    img {
+      height: inherit;
+    }
+  }
 }
 
 .work-card-image {
   background-repeat: no-repeat;
   background-position: top right;
+  background-size: auto;
+  height: 100%;
+  width: 100%;
   position: absolute;
   top: 0;
   right: 0;
-  width: 100%;
-  height: 100%;
   z-index: 1;
+
+  &:after {
+    background-color: rgba(#133C55, .9);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+  }
+
+  @screen md {
+    &:after {
+      content: none;
+    }
+  }
 }
 
 // Hub Group specific styles
@@ -87,14 +148,28 @@
 .work-card.select_home_warranty {
   background: rgb(31,73,125);
   background: linear-gradient(141deg, rgba(31,73,125,1) 0%, rgba(63,117,183,1) 100%);
-  background-position: center right 8%;
+
+  .work-card-image {
+    background-position: top center;
+
+    @screen md {
+      background-position: center right 8%;
+    }
+  }
 }
 
 // THL specific styles
 .work-card.tiny_house_listings {
   background: rgb(192,42,19);
   background: linear-gradient(141deg, rgba(192,42,19,1) 0%, rgba(226,70,46,1) 100%);
-  background-position: center right;
+
+  .work-card-image {
+    background-position: top center;
+
+    @screen md {
+      background-position: center right;
+    }
+  }
 }
 
 
