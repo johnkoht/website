@@ -5,7 +5,7 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `John Koht`,
-    description: `Website`,
+    description: `I'm a full-stack product builder from Chicago with experience building impactful products and teams.`,
     author: `@johnkoht`,
   },
   plugins: [
@@ -28,7 +28,8 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        // icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/jk-logo.svg`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
