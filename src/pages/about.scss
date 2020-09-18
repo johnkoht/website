@@ -1,0 +1,46 @@
+.services-list {
+  margin-top: -140px;
+  position: relative;
+  z-index: 10;
+}
+
+.service-item {
+  @apply flex;
+  @apply items-center;
+  @apply justify-center;
+
+  padding: 4rem 2rem;
+  text-align: center;
+  box-shadow: 0 0 50px 0 rgba(#212332, .2);
+}
+
+.service-item-content {
+  text-align: center;
+
+  img {
+    margin: auto;
+    margin-bottom: 1.5rem;
+  }
+
+  h3 {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+}
+
+.service-item.service-strategy {
+  background-color: theme("colors.red");
+}
+
+.service-item.service-pm {
+  background-color: theme("colors.blue");
+}
+
+.service-item.service-design {
+  background-color: theme("colors.yellow");
+}
+
+.service-item.service-dev {
+  background-color: theme("colors.green");
+}

@@ -1,0 +1,29 @@
+.hero {
+  position: relative;
+  height: 960px;
+  width: 100%;
+}
+
+.hero .hero-content {
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  .hero-title {
+    font-family: theme("fontFamily.sans");
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+
+  .hero-display {
+    font-family: theme("fontFamily.serif");
+    font-size: 3rem;
+  }
+}
+
+.hero-background-image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

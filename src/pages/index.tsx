@@ -47,7 +47,7 @@ const IndexPage = ({data}) => (
   <Layout>
     <SEO title="Home" />
 
-    <div className="hero bg-gray-100 flex justify-center">
+    <div className="hero homepage-hero bg-gray-100 flex justify-center">
       <div className="container hero-content max-w-6xl">
         <h1>Hi, I’m John Koht, a full-stack product builder<br class="hidden lg:block" /> from Chicago with experience building<br class="hidden lg:block" /> impactful products &amp; teams.</h1>
         <LinkArrow url="/about/" text="Learn more about me" />

@@ -133,7 +133,7 @@ module.exports = {
           `,
           family: `
             spouse: spouse
-            children: [children]
+            kids: [children]
           `,
           spouse: `
             name: String

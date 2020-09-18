@@ -1,10 +1,8 @@
 @import "../styles/utils/utils.angle";
 
-.hero {
+.hero.homepage-hero {
   @include angle(after, false, 5deg);
-  position: relative;
   height: 900px;
-  width: 100%;
 
   @screen sm {
     height: 750px;
@@ -15,7 +13,7 @@
   }
 }
 
-.hero-content {
+.homepage-hero .hero-content {
   padding: 175px 1rem 0;
 
   @screen sm {
