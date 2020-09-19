@@ -43,7 +43,7 @@ class NavigationModal extends React.Component {
       <>
         <Hamburger onClick={this.toggleModal} classes={classNames("btn-menu ml-auto hamburger--elastic", {active: this.state.showModal })} />
 
-        <Modal isOpen={this.state.showModal} contentLabel="Example Modal" className="navigation-modal">
+        <Modal isOpen={this.state.showModal} contentLabel="Example Modal" className="navigation-modal" closeTimeoutMS={500}>
           <nav>
             <ul class="nav">
               <li><Link to="/">Home</Link></li>
