@@ -67,7 +67,7 @@ export const query = graphql`
 `
 
 const AboutPage = ({data}) => (
-  <Layout>
+  <Layout invertHeader="true">
     <SEO title="About Me" />
 
     <div className="hero about-hero hero-background-image flex items-center justify-center" style={{backgroundImage: `url(${backgroundImage})`}}>

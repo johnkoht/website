@@ -1,7 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
 import Modal from 'react-modal';
-import MenuIcon from "images/menu-icon.svg"
+import MenuIcon from "images/menu-icon.inline.svg"
+import Hamburger from "components/hamburger"
+import classNames from "classnames"
 
 import "./navigation-modal.scss"
 
@@ -28,32 +30,23 @@ class NavigationModal extends React.Component {
   constructor(props) {
     super(props)
     this.state = { showModal: false }
-    this.openModal = this.openModal.bind(this);
-    this.closeModal = this.closeModal.bind(this);
+    this.toggleModal = this.toggleModal.bind(this);
   }
 
-  openModal() {
-    this.setState({ showModal: true })
-  }
-
-  closeModal() {
-    this.setState({ showModal: false })
+  toggleModal() {
+    let currentState = this.state.showModal;
+    this.setState({ showModal: !currentState })
   }
 
   render() {
     return (
       <>
-        <button onClick={this.openModal} className="btn-menu ml-auto">
-          <img src={MenuIcon} alt="Navigation Menu" />
-        </button>
+        <Hamburger onClick={this.toggleModal} classes={classNames("btn-menu ml-auto hamburger--elastic", {active: this.state.showModal })} />
 
         <Modal isOpen={this.state.showModal} contentLabel="Example Modal" className="navigation-modal">
-          <button onClick={this.closeModal} className="btn-close">
-            close
-          </button>
-
           <nav>
             <ul class="nav">
+              <li><Link to="/">Home</Link></li>
               <li><Link to="/about/">About</Link></li>
               <li><Link to="/work/">Work</Link></li>
               <li><Link to="/photos/">Photos</Link></li>

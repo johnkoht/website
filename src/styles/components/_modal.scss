@@ -9,8 +9,8 @@
   width: 100%;
   height: 100%;
   z-index: 1001;
+}
 
-  .ReactModal__Content {
-    background-color: theme("colors.white");
-  }
+.ReactModal__Content {
+  background-color: theme("colors.white");
 }

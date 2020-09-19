@@ -2,13 +2,59 @@
   @apply flex;
   @apply justify-center;
   @apply items-center;
+
+  background: linear-gradient(137deg, #59a5d8, #ed4747, #ffd166, #06d6a0);
+  background-size: 800% 800%;
+
+  -webkit-animation: NavAnimatedGradient 19s ease infinite;
+  -moz-animation: NavAnimatedGradient 19s ease infinite;
+  animation: NavAnimatedGradient 19s ease infinite;
+
   height: 100%;
   width: 100%;
 
-  ul.nav {}
+  nav,
+  ul.nav,
+  ul.nav li {
+    width: 100%;
+  }
 
-  ul.nav li a {
-    color: theme("colors.navy");
+  ul.nav {
+
+  }
+
+  ul.nav li {
+    text-align: center;
+
+    a {
+      color: theme("colors.gray.200");
+      font-size: 3rem;
+      padding: 1rem;
+      text-transform: uppercase;
+      position: relative;
+
+      &:after {
+        transition: all .4s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+        background-color: theme("colors.white");
+        content: "";
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        height: 4px;
+        width: 0;
+      }
+    }
+
+    a:hover {
+      color: white;
+
+      &:after {
+        transition: all .7s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+        background-color: theme("colors.white");
+        width: 100%;
+      }
+    }
   }
 
   .btn-close {
@@ -16,4 +62,21 @@
     top: 2.5rem;
     right: 2.5rem;
   }
+}
+
+
+@-webkit-keyframes NavAnimatedGradient {
+  0%{background-position:5% 0%}
+  50%{background-position:96% 100%}
+  100%{background-position:5% 0%}
+}
+@-moz-keyframes NavAnimatedGradient {
+  0%{background-position:5% 0%}
+  50%{background-position:96% 100%}
+  100%{background-position:5% 0%}
+}
+@keyframes NavAnimatedGradient {
+  0%{background-position:5% 0%}
+  50%{background-position:96% 100%}
+  100%{background-position:5% 0%}
 }

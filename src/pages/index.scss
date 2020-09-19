@@ -68,3 +68,35 @@
     }
   }
 }
+
+
+.homepage-hero h1 {
+  background: linear-gradient(144deg, #59a5d8, #133c55, #ed4747, #ffd166, #06d6a0);
+  background-size: 200% auto;
+
+  color: theme("colors.gray.900");
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  -webkit-animation: AnimatedGradient 9s ease infinite;
+  -moz-animation: AnimatedGradient 9s ease infinite;
+  animation: AnimatedGradient 9s ease infinite;
+}
+
+@-webkit-keyframes AnimatedGradient {
+  0%{background-position:0% 30%}
+  50%{background-position:100% 71%}
+  100%{background-position:0% 30%}
+}
+@-moz-keyframes AnimatedGradient {
+  0%{background-position:0% 30%}
+  50%{background-position:100% 71%}
+  100%{background-position:0% 30%}
+}
+@keyframes AnimatedGradient {
+  0%{background-position:0% 30%}
+  50%{background-position:100% 71%}
+  100%{background-position:0% 30%}
+}

@@ -1,36 +1,83 @@
+$header-default-height: 120px;
+$header-mobile-height: 80px;
+
 header.header {
+  background-color: transparent;
   display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
+  height: $header-default-height;
   width: 100%;
   z-index: 101;
+
+  .header-inner {
+    height: $header-default-height;
+  }
 
   .stripe {
     background: rgb(89,165,216);
     background: linear-gradient(90deg, rgba(89,165,216,1) 5%, rgba(255,209,102,1) 20%, rgba(6,214,160,1) 35%, rgba(237,71,71,1) 50%, rgba(89,165,216,1) 65%, rgba(255,209,102,1) 80%, rgba(6,214,160,1) 95%);
     height: 6px;
     width: 100%;
+    position: relative;
+    z-index: 1;
   }
 
   .btn-menu,
   .header-spacer {
-    width: 34px;
+    width: 66px;
   }
 
-  .btn-menu  img {
-    height: 20px;
-
-    @screen sm {
-      height: 24px;
-    }
+  .btn-menu {
+    z-index: 1099;
   }
 
-  .header-brand img {
-    height: 55px;
+  .header-brand {
+    z-index: 1;
 
-    @screen sm {
-      height: 75px;
+    svg {
+      fill: theme("colors.blue");
+      height: 55px;
+
+      @screen sm {
+        height: 75px;
+      }
     }
+  }
+}
+
+main {
+  margin-top: -1 * $header-default-height;
+}
+
+.header.invert {
+  .header-brand svg {
+    fill: theme("colors.white");
+  }
+
+  .btn-menu svg {
+    fill: theme("colors.gray.100");
+  }
+}
+
+body.loading header.header .stripe {
+  background-size: 1000% 1000%;
+
+  -webkit-animation: AnimatedGradient 20s ease infinite;
+  -moz-animation: AnimatedGradient 20s ease infinite;
+  animation: AnimatedGradient 20s ease infinite;
+
+  @-webkit-keyframes AnimatedGradient {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+  }
+  @-moz-keyframes AnimatedGradient {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+  }
+  @keyframes AnimatedGradient {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
   }
 }
