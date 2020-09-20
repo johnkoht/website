@@ -14,8 +14,6 @@ const Header = ({invert}: HeaderProps) => {
 
   return (
     <header className={headerClass}>
-      <div className="stripe"></div>
-
       <div className="header-inner flex items-center px-4 md:px-10">
         <div className="header-spacer"></div>
 

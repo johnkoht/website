@@ -12,15 +12,6 @@ header.header {
     height: $header-default-height;
   }
 
-  .stripe {
-    background: rgb(89,165,216);
-    background: linear-gradient(90deg, rgba(89,165,216,1) 5%, rgba(255,209,102,1) 20%, rgba(6,214,160,1) 35%, rgba(237,71,71,1) 50%, rgba(89,165,216,1) 65%, rgba(255,209,102,1) 80%, rgba(6,214,160,1) 95%);
-    height: 6px;
-    width: 100%;
-    position: relative;
-    z-index: 1;
-  }
-
   .btn-menu,
   .header-spacer {
     width: 66px;
@@ -34,12 +25,23 @@ header.header {
     z-index: 1;
 
     svg {
+      transition: all .6s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+      transform: scale(1, 1);
       fill: theme("colors.blue");
       height: 55px;
 
       @screen sm {
         height: 75px;
       }
+    }
+
+    &:hover svg {
+      transition: all .4s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+      transform: scale(1.065, 1.065);
+      // -webkit-filter: drop-shadow( 0 15px 20px rgba(#DEEDF7, .5));
+      // filter: drop-shadow( 0 10px 20px 3px rgba(#133c55, .5));
+
+      fill: theme("colors.navy");
     }
   }
 }
@@ -55,29 +57,5 @@ main {
 
   .btn-menu svg {
     fill: theme("colors.gray.100");
-  }
-}
-
-body.loading header.header .stripe {
-  background-size: 1000% 1000%;
-
-  -webkit-animation: AnimatedGradient 20s ease infinite;
-  -moz-animation: AnimatedGradient 20s ease infinite;
-  animation: AnimatedGradient 20s ease infinite;
-
-  @-webkit-keyframes AnimatedGradient {
-    0%{background-position:0% 51%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 51%}
-  }
-  @-moz-keyframes AnimatedGradient {
-    0%{background-position:0% 51%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 51%}
-  }
-  @keyframes AnimatedGradient {
-    0%{background-position:0% 51%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 51%}
   }
 }
