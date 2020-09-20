@@ -48,7 +48,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `Merriweather\:400`,
+          `Merriweather\:300,400`,
           `Open Sans\:300,400,700,800,900`
         ],
         display: 'swap'
@@ -133,14 +133,14 @@ module.exports = {
           `,
           family: `
             spouse: spouse
-            kids: [children]
+            kids: [kids]
           `,
           spouse: `
             name: String
             first_name: String
             last_name: String
           `,
-          children: `
+          kids: `
             name: String
             first_name: String
             last_name: String

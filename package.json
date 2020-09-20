@@ -7,6 +7,7 @@
   "dependencies": {
     "axios": "^0.20.0",
     "classnames": "^2.2.6",
+    "cloudinary-react": "^1.6.6",
     "dotenv": "^8.2.0",
     "gatsby": "^2.24.54",
     "gatsby-alias-imports": "^1.0.4",
