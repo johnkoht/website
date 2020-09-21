@@ -162,6 +162,21 @@ module.exports = {
       }
     },
     {
+      resolve: "gatsby-source-custom-api",
+      options: {
+        url: `${process.env.API_URL}/blog_posts`,
+        rootKey: "blog_posts",
+        schemas: {
+          photo: `
+            id: String
+            url: String
+            title: String
+            summary: String
+          `
+        }
+      }
+    },
+    {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {

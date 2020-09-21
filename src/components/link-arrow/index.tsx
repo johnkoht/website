@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import ArrowRight from "images/arrow-right.svg"
-import ArrowRightInvert from "images/arrow-right-white.svg"
+import ArrowRight from "images/arrow-right.inline.svg"
 
 import "./link-arrow.scss"
 
@@ -20,16 +19,17 @@ const LinkArrow = ({
 }: LinkArrowProps) => {
 
   let classes = "link-arrow";
-  let icon    = ArrowRight;
 
   if (invert) {
     classes  = "link-arrow inverted";
-    icon = ArrowRightInvert;
   }
 
   return (
     <Link id={id} className={classes} to={url}>
-      <img src={icon} alt="Arrow Icon" />
+      <span class="arrow-icon">
+        <ArrowRight alt="Arrow Icon" />
+      </span>
+
       {text}
     </Link>
   )

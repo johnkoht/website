@@ -1,4 +1,6 @@
-.copyright,
-.phantom {
-  width: 125px;
+@screen sm {
+  .copyright,
+  .phantom {
+    width: 125px;
+  }
 }

@@ -1,0 +1,49 @@
+.blog-card {
+  position: relative;
+
+  .blog-card-stripe {
+    @apply rounded-t;
+    @apply bg-blue;
+    position: absolute;
+    height: 6px;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+
+.blog-card:nth-child(2n) {
+  .blog-card-stripe {
+    @apply bg-red;
+  }
+
+  a.link-arrow {
+    color: theme("colors.red");
+
+    &:after {
+      background-color: theme("colors.red");
+    }
+
+    svg {
+      fill: theme("colors.red");
+    }
+  }
+}
+
+.blog-card:nth-child(3n) {
+  .blog-card-stripe {
+    @apply bg-green;
+  }
+
+  a.link-arrow {
+    color: theme("colors.green");
+
+    &:after {
+      background-color: theme("colors.green");
+    }
+
+    svg {
+      fill: theme("colors.green");
+    }
+  }
+}

@@ -6,10 +6,15 @@
   position: relative;
   vertical-align: middle;
 
-  img {
+  span.arrow-icon {
     transition: all .2s cubic-bezier(0.165, 0.840, 0.440, 1.000);
-    display: inline;
+    display: inline-block;
     margin-right: 5px;
+    vertical-align: baseline;
+
+    svg {
+      fill: theme("colors.blue");
+    }
   }
 
   &:after {
@@ -27,7 +32,7 @@
   }
 
   &:hover {
-    img {
+    span.arrow-icon {
       transition: all .4s cubic-bezier(0.165, 0.840, 0.440, 1.000);
       transform: translateX(-10px);
       margin-right: 10px;
@@ -45,5 +50,9 @@
 
   &:after {
     background-color: theme("colors.gray.100");
+  }
+
+  span.arrow-icon svg {
+    fill: theme("colors.gray.100");
   }
 }

@@ -1,7 +1,13 @@
+@import "../styles/utils/utils.angle";
+
 .services-list {
-  margin-top: -140px;
+  margin-top: -144px;
   position: relative;
   z-index: 10;
+
+  @screen sm {
+    margin-top: -140px;
+  }
 }
 
 .service-item {
@@ -9,23 +15,44 @@
   @apply items-center;
   @apply justify-center;
 
-  padding: 4rem 2rem;
+  padding: 1.5rem .5rem;
   text-align: center;
-  box-shadow: 0 0 50px 0 rgba(#212332, .2);
+
+  @screen sm {
+    box-shadow: 0 0 50px 0 rgba(#212332, .2);
+    padding: 2rem 1rem;
+  }
+
+  @screen lg {
+    padding: 4rem 2rem;
+  }
 }
 
 .service-item-content {
   text-align: center;
 
-  img {
+  img,
+  svg {
+    height: 60px;
     margin: auto;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  @screen sm {
+    svg {
+      height: 100px;
+      margin-bottom: 1.5rem;
+    }
   }
 
   h3 {
     color: white;
-    font-size: 1.25rem;
+    font-size: .85rem;
     font-weight: bold;
+  }
+
+  @screen sm {
+    font-size: 1.25rem;
   }
 }
 
@@ -79,9 +106,16 @@
   }
 }
 
-.about-bio {
-  margin-top: 3rem;
+@screen md {
+  .about-avatar {
+    img {
+      max-height: 200px;
+      max-width: 200px;
+    }
+  }
+}
 
+.about-bio {
   p {
     @apply antialiased;
     color: theme("colors.gray.800");
@@ -91,4 +125,12 @@
     line-height: 1.8;
     margin-bottom: 1.5rem;
   }
+}
+
+
+// Blog Sectin
+// Blog overviews and styles
+//
+.about-blog {
+  @include angle(before, true, 5deg);
 }

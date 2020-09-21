@@ -1,13 +1,14 @@
 .hero {
   position: relative;
-  height: 960px;
+  height: 700px;
   width: 100%;
+
+  @screen lg {
+    height: 960px;
+  }
 }
 
 .hero .hero-content {
-  padding-left: 1rem;
-  padding-right: 1rem;
-
   .hero-title {
     font-family: theme("fontFamily.sans");
     font-size: 1.2rem;

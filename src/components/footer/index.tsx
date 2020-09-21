@@ -19,12 +19,12 @@ const Footer = () => (
       }
     `}
     render={data => (
-      <footer className="footer p-12 bg-white">
-        <div className="container mx-auto">
-          <div className="flex">
-            <span className="copyright text-sm font-thin text-gray-600">&copy; {new Date().getFullYear()} John Koht</span>
+      <footer className="footer py-8 sm:py-12 bg-white">
+        <div className="max-w-screen-xl px-4 md:px-0 mx-auto">
+          <div className="flex flex-wrap">
+            <span className="copyright mx-auto sm:m-0 sm:mr-auto text-sm font-thin text-gray-600">&copy; {new Date().getFullYear()} John Koht</span>
 
-            <div className="ml-auto flex items-center">
+            <div className="order-first sm:order-2 mx-auto mb-4 sm:mb-0 sm:ml-auto flex items-center">
               {data.allLinks.edges.map(({ node }) => (
                 <a className="contact-icon mx-3" href={node.url}>
                   <img src={node.icon} alt={node.site} />
@@ -32,7 +32,7 @@ const Footer = () => (
               ))}
             </div>
 
-            <span className="phantom ml-auto"></span>
+            <span className="phantom ml-auto hidden sm:flex sm:order-3"></span>
           </div>
         </div>
       </footer>

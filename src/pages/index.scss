@@ -1,5 +1,8 @@
 @import "../styles/utils/utils.angle";
 
+// Homepage Hero
+// Hero layout, text, and animations
+//
 .hero.homepage-hero {
   @include angle(after, false, 5deg);
   height: 900px;
@@ -14,12 +17,7 @@
 }
 
 .homepage-hero .hero-content {
-  padding: 175px 1rem 0;
-
-  @screen sm {
-    padding-left: 0;
-    padding-right: 0;
-  }
+  padding-top: 175px;
 
   @screen lg {
     padding: 350px 0 0;
@@ -28,12 +26,17 @@
   h1 {
     color: theme("colors.gray.900");
     font-family: theme("fontFamily.serif");
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 400;
-    line-height: 3rem;
+    line-height: 2.75rem;
     margin-bottom: 1.25rem;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
+
+    @screen sm {
+      font-size: 2.25rem;
+      line-height: 3.25rem;
+    }
 
     @screen lg {
       font-size: 3rem;
@@ -42,34 +45,7 @@
   }
 }
 
-.work-container {
-  position: relative;
-  margin-top: -300px;
-  z-index: 11;
-}
-
-@screen lg {
-  .photo-gallery {
-    display: flex;
-    flex-flow: column wrap;
-    height: 1280px;
-
-    /* Re-order items into rows */
-    .photo-item:nth-child(3n+1) { order: 1; }
-    .photo-item:nth-child(3n+2) { order: 2; }
-    .photo-item:nth-child(3n)   { order: 3; }
-
-    &::before,
-    &::after {
-      content: "";
-      flex-basis: 100%;
-      width: 0;
-      order: 2;
-    }
-  }
-}
-
-
+// Animate the hero text
 .homepage-hero h1 {
   background: linear-gradient(144deg, #ed4747, #59a5d8, #ffd166, #06d6a0);
   background-size: 200% 200%;
@@ -100,3 +76,47 @@
   50%{background-position:100% 88%}
   100%{background-position:0% 13%}
 }
+
+
+
+// Work Container
+// We push up the work container to cover
+// the hero background angled box
+//
+.work-container {
+  position: relative;
+  margin-top: -325px;
+  z-index: 11;
+
+  @screen sm {
+    margin-top: -300px;
+  }
+}
+
+
+// Photo Gallery
+// Masonry/grid layout of photos
+// No columns on mobile
+//
+
+// Two columns on SM
+@screen sm {
+  .photo-gallery {
+    columns: 2 200px;
+    column-gap: 1rem;
+
+    div {
+      margin: 0 1rem 1rem 0;
+      display: inline-block;
+      width: 100%;
+    }
+  }
+}
+
+// Three columns above
+@screen md {
+  .photo-gallery {
+    columns: 3 200px;
+  }
+}
+
