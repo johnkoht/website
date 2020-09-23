@@ -189,20 +189,21 @@ const AboutPage = ({data}) => {
         </div>
       </div>
 
-      <div class="about-blog mt-20 sm:mt-32 lg:mt-64 py-16 sm:py-24 lg:py-48 bg-gray-100">
-        <div class="max-w-screen-xl px-4 md:px-8 lg:px-0 mx-auto">
-          <div class="mb-10 lg:mb-20 max-w-6xl mx-auto">
-            <h2 className="mb-2">Sometimes I write about product strategy,<br class="hidden lg:block" /> design, and development.</h2>
+      <div className="about-blog mt-20 sm:mt-32 lg:mt-64 py-16 sm:py-24 lg:py-48 bg-gray-100">
+        <div className="max-w-screen-xl px-4 md:px-8 lg:px-0 mx-auto">
+          <div className="mb-10 lg:mb-20 max-w-6xl mx-auto">
+            <h2 className="mb-2">Sometimes I write about product strategy,<br className="hidden lg:block" /> design, and development.</h2>
             <LinkArrow url="https://blog.kohactive.com/author/john-koht/" text="Read my posts" />
           </div>
 
-          <div class="blog-posts grid sm:grid-cols-2 md:grid-cols-3 gap-3 lg:gap-8">
+          <div className="blog-posts grid sm:grid-cols-2 md:grid-cols-3 gap-3 lg:gap-8">
             {data.allBlogPosts.edges.map(({ node }) => (
               <BlogCard
                 id={node.id__normalized}
                 url={node.url}
                 title={node.title}
                 summary={node.summary}
+                key={node.id__normalized}
               />
             ))}
           </div>

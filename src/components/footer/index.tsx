@@ -26,7 +26,7 @@ const Footer = () => (
 
             <div className="order-first sm:order-2 mx-auto mb-4 sm:mb-0 sm:ml-auto flex items-center">
               {data.allLinks.edges.map(({ node }) => (
-                <a className="contact-icon mx-3" href={node.url}>
+                <a className="contact-icon mx-3" href={node.url} key={node.site}>
                   <img src={node.icon} alt={node.site} />
                 </a>
               ))}

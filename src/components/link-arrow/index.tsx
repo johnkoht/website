@@ -26,7 +26,7 @@ const LinkArrow = ({
 
   return (
     <Link id={id} className={classes} to={url}>
-      <span class="arrow-icon">
+      <span className="arrow-icon">
         <ArrowRight alt="Arrow Icon" />
       </span>
 

@@ -1,0 +1,12 @@
+.link-external {
+  &:before {
+    background-image: url("../images/icons/external-link.svg");
+    content: "";
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    height: 20px;
+    width: 20px;
+  }
+}
