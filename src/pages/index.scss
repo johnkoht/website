@@ -5,7 +5,7 @@
 //
 .hero.homepage-hero {
   @include angle(after, false, 5deg);
-  height: 900px;
+  height: 750px;
 
   @screen sm {
     height: 750px;

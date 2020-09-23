@@ -17,6 +17,10 @@
     @apply shadow-xl;
   }
 
+  @screen md {
+    height: 800px;
+  }
+
   @screen lg {
     height: 900px;
   }
@@ -34,16 +38,16 @@
   position: relative;
   z-index: 5;
 
-  @screen md {
-    padding: 2.5rem;
-  }
-
-  @screen lg {
+  @screen sm {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 60px 0 60px 90px;
+    padding: 60px 0 60px 60px;
     width: 575px;
+  }
+
+  @screen lg {
+    padding: 60px 0 60px 90px;
   }
 }
 
@@ -53,6 +57,14 @@
     font-weight: 800;
     line-height: 1.2;
     margin-bottom: 1rem;
+
+    @screen sm {
+      font-size: 50px;
+    }
+
+    @screen md {
+      font-size: 60px;
+    }
 
     @screen lg {
       font-size: 70px;
@@ -65,8 +77,9 @@
     line-height: 1.4;
     margin-bottom: 1rem;
 
-    @screen lg {
+    @screen sm {
       font-size: 18px;
+      line-height: 1.5;
     }
   }
 }
@@ -77,6 +90,7 @@
   h4 {
     font-size: 15px;
     font-weight: 700;
+    margin-bottom: .5rem;
   }
 
   ul, li {
@@ -86,9 +100,10 @@
   li {
     font-size: 15px;
     font-weight: 300;
+    line-height: 1.75;
   }
 
-  @screen lg {
+  @screen md {
     margin-top: 0;
   }
 }
@@ -100,7 +115,7 @@
     height: 60px;
   }
 
-  @screen lg {
+  @screen md {
     margin-bottom: 0;
 
     img {
@@ -130,30 +145,59 @@
     width: 100%;
     z-index: 2;
   }
+}
 
-  @screen lg {
-    &:after {
+// Hub Group specific styles
+.work-card.hub_group {
+  background-size: cover;
+  background: rgb(84,173,68);
+  background: linear-gradient(141deg, rgba(84,173,68,1) 0%, rgba(126,212,105,1) 100%);
+
+  @screen sm {
+    background-size: auto;
+  }
+
+  .work-card-image:after {
+    background: linear-gradient(141deg, rgba(84,173,68,.9) 0%, rgba(126,212,105,.9) 100%);
+
+    @screen sm {
+      background: linear-gradient(90deg, rgba(84,173,68,1) 0%, rgba(126,212,105,1) 50%, rgba(126,212,105,0) 100%);
+    }
+
+    @screen lg {
       content: none;
     }
   }
 }
 
-// Hub Group specific styles
-.work-card.hub_group {
-  background: rgb(84,173,68);
-  background: linear-gradient(141deg, rgba(84,173,68,1) 0%, rgba(126,212,105,1) 100%);
-}
-
 // SHW specific styles
 .work-card.select_home_warranty {
+  // Background color for the entire card
   background: rgb(31,73,125);
   background: linear-gradient(141deg, rgba(31,73,125,1) 0%, rgba(63,117,183,1) 100%);
 
+  // Customize the the image position
+  // for this particular project card
   .work-card-image {
     background-position: top center;
 
-    @screen lg {
+    @screen md {
       background-position: center right 8%;
+    }
+  }
+
+  // Background that overlays the image, this is
+  // a gradient from color to transparent to
+  // make readability easier
+  .work-card-image:after {
+    background: linear-gradient(141deg, rgba(31,73,125,.9) 0%, rgba(63,117,183,.9) 100%);
+
+    @screen sm {
+      background: linear-gradient(90deg, rgba(31,73,125,1) 0%, rgba(63,117,183,1) 50%, rgba(63,117,183,0) 100%);
+    }
+
+    @screen lg {
+      content: none;
     }
   }
 }
@@ -163,11 +207,28 @@
   background: rgb(192,42,19);
   background: linear-gradient(141deg, rgba(192,42,19,1) 0%, rgba(226,70,46,1) 100%);
 
+  // Customize the the image position
+  // for this particular project card
   .work-card-image {
     background-position: top center;
 
-    @screen lg {
+    @screen md {
       background-position: center right;
+    }
+  }
+
+  // Background that overlays the image, this is
+  // a gradient from color to transparent to
+  // make readability easier
+  .work-card-image:after {
+    background: linear-gradient(90deg, rgba(192,42,19,.9) 0%, rgba(226,70,46,.9) 100%);
+
+    @screen sm {
+      background: linear-gradient(90deg, rgba(192,42,19,1) 0%, rgba(226,70,46,1) 50%, rgba(226,70,46,0) 100%);
+    }
+
+    @screen lg {
+      content: none;
     }
   }
 }
