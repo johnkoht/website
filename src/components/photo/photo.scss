@@ -1,4 +1,10 @@
 .photo-item {
+  @apply transition-all;
+  @apply duration-500;
+  @apply transform;
+  @apply ease-jk-custom;
+  @apply scale-100;
+
   border: 10px solid #ffffff;
   box-shadow: 0 2px 10px 0 rgba(#212332, .1);
   margin-bottom: 1rem;
@@ -11,7 +17,29 @@
   }
 
   img {
+    @apply transition-all;
+    @apply duration-500;
+    @apply transform;
+    @apply ease-jk-custom;
+    @apply scale-100;
+
     min-height: 100%;
     min-width: 100%;
+  }
+
+  &:hover {
+    @apply transition-all;
+    @apply duration-500;
+    @apply transform;
+    @apply ease-jk-custom;
+    @apply scale-102;
+
+    img {
+      @apply transition-all;
+      @apply duration-500;
+      @apply transform;
+      @apply ease-jk-custom;
+      @apply scale-105;
+    }
   }
 }

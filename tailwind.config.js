@@ -54,6 +54,14 @@ module.exports = {
           800: '#343A40',
           900: '#212529',
         },
+      },
+      scale: {
+        '101': '1.01',
+        '102': '1.02',
+        '103': '1.03'
+      },
+      transitionTimingFunction: {
+        'jk-custom': 'cubic-bezier(0.165, 0.840, 0.440, 1.000)',
       }
     }
   },

@@ -3,18 +3,28 @@
 */
 
 .work-card {
-  @apply transition-shadow;
+  @apply transition-all;
   @apply duration-300;
+  @apply transform;
+  @apply ease-jk-custom;
+  @apply scale-100;
   background-color: theme("colors.navy");
   margin-bottom: 3rem;
   height: auto;
   width: 100%;
   position: relative;
+  backface-visibility: hidden;
+  -webkit-font-smoothing: subpixel-antialiased;
 
   &:hover {
-    @apply transition-shadow;
+    @apply transition-all;
     @apply duration-500;
-    @apply shadow-xl;
+    @apply shadow-2xl;
+    @apply transform;
+    @apply ease-jk-custom;
+    @apply scale-102;
+    backface-visibility: hidden;
+    -webkit-font-smoothing: subpixel-antialiased;
   }
 
   @screen md {

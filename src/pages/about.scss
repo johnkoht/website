@@ -14,6 +14,11 @@
   @apply flex;
   @apply items-center;
   @apply justify-center;
+  @apply transition-all;
+  @apply duration-500;
+  @apply transform;
+  @apply ease-jk-custom;
+  @apply scale-100;
 
   padding: 1.5rem .5rem;
   text-align: center;
@@ -25,6 +30,15 @@
 
   @screen lg {
     padding: 4rem 2rem;
+  }
+
+  &:hover {
+    @apply transition-all;
+    @apply duration-500;
+    @apply shadow-2xl;
+    @apply transform;
+    @apply ease-jk-custom;
+    @apply scale-102;
   }
 }
 
@@ -38,13 +52,6 @@
     margin-bottom: 1rem;
   }
 
-  @screen sm {
-    svg {
-      height: 100px;
-      margin-bottom: 1.5rem;
-    }
-  }
-
   h3 {
     color: white;
     font-size: .85rem;
@@ -52,7 +59,14 @@
   }
 
   @screen sm {
-    font-size: 1.25rem;
+    svg {
+      height: 100px;
+      margin-bottom: 1.5rem;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+    }
   }
 }
 

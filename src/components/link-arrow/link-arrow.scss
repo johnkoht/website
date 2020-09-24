@@ -7,7 +7,9 @@
   vertical-align: middle;
 
   span.arrow-icon {
-    transition: all .2s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+    @apply transition-all;
+    @apply duration-200;
+    @apply ease-jk-custom;
     display: inline-block;
     margin-right: 5px;
     vertical-align: baseline;
@@ -18,8 +20,10 @@
   }
 
   &:after {
-    transition: all .2s cubic-bezier(0.165, 0.840, 0.440, 1.000);
-    background-color: theme("colors.blue");
+    @apply transition-all;
+    @apply duration-200;
+    @apply ease-jk-custom;
+    @apply bg-blue;
     border-radius: 1px;
     opacity: .2;
     content: "";
@@ -33,13 +37,17 @@
 
   &:hover {
     span.arrow-icon {
-      transition: all .4s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+      @apply transition-all;
+      @apply duration-200;
+      @apply ease-jk-custom;
       transform: translateX(-10px);
       margin-right: 10px;
     }
 
     &:after {
-      transition: all .4s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+      @apply transition-all;
+      @apply duration-200;
+      @apply ease-jk-custom;
       width: 100%;
     }
   }
