@@ -93,11 +93,15 @@
 //
 .work-container {
   position: relative;
-  margin-top: -325px;
+  margin-top: -215px;
   z-index: 11;
 
   @screen sm {
-    margin-top: -300px;
+    margin-top: -250px;
+  }
+
+  @screen md {
+    margin-top: -325px;
   }
 }
 
