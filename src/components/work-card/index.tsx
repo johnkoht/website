@@ -48,7 +48,7 @@ const WorkCard = ({
           <p>{description}</p>
 
           {url != null &&
-            <LinkArrow url={url} text="View cast study" invert="true" />
+            <LinkArrow url={url} text="View case study" invert="true" />
           }
 
         </div>
