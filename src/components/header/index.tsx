@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import Logo from "images/jk-logo.inline.svg";
+import Logo from "images/jk-logo.inline.svg"
 
 import Navigation from "components/navigation-modal"
 import "./header.scss"
@@ -9,7 +9,7 @@ interface HeaderProps {
   invert?: boolean
 }
 
-const Header = ({invert}: HeaderProps) => {
+const Header = ({ invert }: HeaderProps) => {
   let headerClass = invert ? "header invert" : "header"
 
   return (

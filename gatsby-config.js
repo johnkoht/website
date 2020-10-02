@@ -47,21 +47,18 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          `Merriweather\:300,400`,
-          `Open Sans\:300,400,700,800,900`
-        ],
-        display: 'swap'
-      }
+        fonts: [`Merriweather\:300,400`, `Open Sans\:300,400,700,800,900`],
+        display: "swap",
+      },
     },
     {
       resolve: `gatsby-alias-imports`,
       options: {
         aliases: {
           styles: `src/styles`,
-          images: `src/images`
-        }
-      }
+          images: `src/images`,
+        },
+      },
     },
     {
       resolve: "gatsby-source-custom-api",
@@ -83,9 +80,9 @@ module.exports = {
             company: String
             logo: String
             industry: String
-          `
-        }
-      }
+          `,
+        },
+      },
     },
     {
       resolve: "gatsby-source-custom-api",
@@ -98,9 +95,9 @@ module.exports = {
             description: String
             url: String
             image: String
-          `
-        }
-      }
+          `,
+        },
+      },
     },
     {
       resolve: "gatsby-source-custom-api",
@@ -157,9 +154,9 @@ module.exports = {
             city: String
             state: String
             zip_code: String
-          `
-        }
-      }
+          `,
+        },
+      },
     },
     {
       resolve: "gatsby-source-custom-api",
@@ -172,20 +169,20 @@ module.exports = {
             url: String
             title: String
             summary: String
-          `
-        }
-      }
+          `,
+        },
+      },
     },
     {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
-          include: /\.inline\.svg$/
-        }
-      }
+          include: /\.inline\.svg$/,
+        },
+      },
     },
     {
-    resolve: `gatsby-plugin-netlify`,
+      resolve: `gatsby-plugin-netlify`,
       options: {
         headers: {}, // option to add more headers. `Link` headers are transformed by the below criteria
         allPageHeaders: [], // option to add headers for all pages. `Link` headers are transformed by the below criteria

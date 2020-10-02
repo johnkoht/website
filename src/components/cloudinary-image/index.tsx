@@ -2,14 +2,14 @@ import React from "react"
 import { Link } from "gatsby"
 
 interface ImageProps {
-  id: int,
-  classes: string,
-  url: string,
-  alt: string,
-  width: string,
-  height: string,
-  crop: string,
-  format: string,
+  id: int
+  classes: string
+  url: string
+  alt: string
+  width: string
+  height: string
+  crop: string
+  format: string
   quality: string
 }
 
@@ -22,11 +22,11 @@ const CloudinaryImage = ({
   height,
   crop,
   format,
-  quality
+  quality,
 }: ImageProps) => {
   let imageSettings = []
-  let urlObject = new URL(url);
-  let src;
+  let urlObject = new URL(url)
+  let src
 
   // Combine all of the customized image settings
   // into an array
@@ -54,18 +54,16 @@ const CloudinaryImage = ({
   // them into the URL provided to create a valid Cloudinary URL
   // Otherwise, we'll just return the url.
   if (imageSettings.length) {
-    let pathnameArray = urlObject.pathname.split("/");
-    let uploadIndex = pathnameArray.indexOf("upload") + 1;
-    pathnameArray.splice(uploadIndex, 0, imageSettings.join(","));
+    let pathnameArray = urlObject.pathname.split("/")
+    let uploadIndex = pathnameArray.indexOf("upload") + 1
+    pathnameArray.splice(uploadIndex, 0, imageSettings.join(","))
 
-    src = urlObject.origin + pathnameArray.join("/");
+    src = urlObject.origin + pathnameArray.join("/")
   } else {
-    src = url;
+    src = url
   }
 
-  return (
-    <img src={src} alt={alt} className={classes} />
-  )
+  return <img src={src} alt={alt} className={classes} />
 }
 
 export default CloudinaryImage

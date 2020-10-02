@@ -8,14 +8,14 @@ import Footer from "components/footer"
 import "./layout.scss"
 
 interface LayoutProps {
-  children: node,
+  children: node
   invertHeader?: string
 }
 
 const Layout = ({ children, invertHeader }: LayoutProps) => {
   return (
     <>
-      <Header invert={invertHeader}/>
+      <Header invert={invertHeader} />
       <main>{children}</main>
       <Footer />
     </>

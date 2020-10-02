@@ -6,17 +6,17 @@ import LinkArrow from "components/link-arrow"
 import "./work-card.scss"
 
 interface WorkCardProps {
-  id: string,
-  title: string,
-  description: string,
+  id: string
+  title: string
+  description: string
   client: {
-    company: string,
-    industry: string,
+    company: string
+    industry: string
     logo: string
-  },
-  type: string,
-  url: string,
-  image: string,
+  }
+  type: string
+  url: string
+  image: string
   roles: Array
 }
 
@@ -28,15 +28,18 @@ const WorkCard = ({
   type,
   url,
   image,
-  roles
+  roles,
 }: WorkCardProps) => {
-  let workClass = snakeCase(client.company);
+  let workClass = snakeCase(client.company)
 
   return (
     <div className={"work-card " + workClass} id={id} key={id}>
-      {image != null &&
-        <div className="work-card-image" style={{backgroundImage: "url(" + image + ")"}} />
-      }
+      {image != null && (
+        <div
+          className="work-card-image"
+          style={{ backgroundImage: "url(" + image + ")" }}
+        />
+      )}
 
       <div className="work-card-content">
         <div className="work-card-logo">
@@ -47,10 +50,9 @@ const WorkCard = ({
           <h3>{title}</h3>
           <p>{description}</p>
 
-          {url != null &&
+          {url != null && (
             <LinkArrow url={url} text="View case study" invert="true" />
-          }
-
+          )}
         </div>
 
         <div className="work-card-roles">

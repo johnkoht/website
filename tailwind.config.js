@@ -7,32 +7,46 @@ module.exports = {
   theme: {
     extend: {
       backgroundOpacity: {
-        '90': '0.95'
+        90: "0.95",
       },
       screens: {
-        "lg": "1340px"
+        lg: "1340px",
       },
       fontFamily: {
-        display: ['Merriweather', 'sans-serif'],
-        body: ['Open Sans', 'sans-serif'],
+        display: ["Merriweather", "sans-serif"],
+        body: ["Open Sans", "sans-serif"],
         sans: [
-          'Open Sans',
-          'system-ui',
-          '-apple-system',
-          'BlinkMacSystemFont',
+          "Open Sans",
+          "system-ui",
+          "-apple-system",
+          "BlinkMacSystemFont",
           '"Segoe UI"',
-          'Roboto',
+          "Roboto",
           '"Helvetica Neue"',
-          'Arial',
+          "Arial",
           '"Noto Sans"',
-          'sans-serif',
+          "sans-serif",
           '"Apple Color Emoji"',
           '"Segoe UI Emoji"',
           '"Segoe UI Symbol"',
           '"Noto Color Emoji"',
         ],
-        serif: ['Merriweather', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
-        mono: ['Menlo', 'Monaco', 'Consolas', '"Liberation Mono"', '"Courier New"', 'monospace'],
+        serif: [
+          "Merriweather",
+          "Georgia",
+          "Cambria",
+          '"Times New Roman"',
+          "Times",
+          "serif",
+        ],
+        mono: [
+          "Menlo",
+          "Monaco",
+          "Consolas",
+          '"Liberation Mono"',
+          '"Courier New"',
+          "monospace",
+        ],
       },
 
       colors: {
@@ -44,26 +58,26 @@ module.exports = {
         white: "#FFFFFF",
 
         gray: {
-          100: '#F8F9FA',
-          200: '#E9ECEF',
-          300: '#DEE2E6',
-          400: '#CED4DA',
-          500: '#ADB5BD',
-          600: '#6C757D',
-          700: '#495057',
-          800: '#343A40',
-          900: '#212529',
+          100: "#F8F9FA",
+          200: "#E9ECEF",
+          300: "#DEE2E6",
+          400: "#CED4DA",
+          500: "#ADB5BD",
+          600: "#6C757D",
+          700: "#495057",
+          800: "#343A40",
+          900: "#212529",
         },
       },
       scale: {
-        '101': '1.01',
-        '102': '1.02',
-        '103': '1.03'
+        101: "1.01",
+        102: "1.02",
+        103: "1.03",
       },
       transitionTimingFunction: {
-        'jk-custom': 'cubic-bezier(0.165, 0.840, 0.440, 1.000)',
-      }
-    }
+        "jk-custom": "cubic-bezier(0.165, 0.840, 0.440, 1.000)",
+      },
+    },
   },
   variants: {},
   plugins: [],

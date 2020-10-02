@@ -80,21 +80,24 @@ export const query = graphql`
   }
 `
 
-const AboutPage = ({data}) => {
-  let kidsString;
+const AboutPage = ({ data }) => {
+  let kidsString
   if (data.about.family.kids.length) {
-    let kids = data.about.family.kids;
-    let lastName = kids[0].last_name;
-    console.log(data.about.family.kids);
-    let firstNames = kids.map(kid => kid.first_name);
-    kidsString = `${firstNames.join(", ")} ${lastName}`;
+    let kids = data.about.family.kids
+    let lastName = kids[0].last_name
+    console.log(data.about.family.kids)
+    let firstNames = kids.map(kid => kid.first_name)
+    kidsString = `${firstNames.join(", ")} ${lastName}`
   }
 
-  return(
+  return (
     <Layout invertHeader="true">
       <SEO title="About Me" />
 
-      <div className="hero about-hero hero-background-image flex items-center justify-center" style={{backgroundImage: `url(${BackgroundImage})`}}>
+      <div
+        className="hero about-hero hero-background-image flex items-center justify-center"
+        style={{ backgroundImage: `url(${BackgroundImage})` }}
+      >
         <div className="hero-content text-center">
           <h1 className="hero-title text-white">About Me</h1>
           <h2 className="hero-display text-white">Dad. Husband. Creator</h2>
@@ -136,7 +139,13 @@ const AboutPage = ({data}) => {
       <div className="max-w-2xl mx-auto mt-10 md:mt-40 px-4 md:px-8">
         <div className="about-overview flex flex-wrap">
           <div className="about-avatar">
-            <CloudinaryImage url={data.about.avatar} width="400" height="400" crop="fit" alt="Headshot of John Koht smoking a cigar" />
+            <CloudinaryImage
+              url={data.about.avatar}
+              width="400"
+              height="400"
+              crop="fit"
+              alt="Headshot of John Koht smoking a cigar"
+            />
           </div>
 
           <div className="about-details mt-6 sm:mt-0 sm:ml-10">
@@ -146,15 +155,14 @@ const AboutPage = ({data}) => {
                 <span className="ab-icon">
                   <WorkIcon alt="Icon of a briefcase" />
                 </span>
-
-                {data.about.employment.position}, {data.about.employment.company}
+                {data.about.employment.position},{" "}
+                {data.about.employment.company}
               </li>
 
               <li>
                 <span className="ab-icon">
                   <SchoolIcon alt="Icon of a graduation cap" />
                 </span>
-
                 {data.about.education.major}, {data.about.education.institution}
               </li>
 
@@ -162,7 +170,6 @@ const AboutPage = ({data}) => {
                 <span className="ab-icon">
                   <LocationIcon alt="Icon of a location pin" />
                 </span>
-
                 {data.about.location.city}, {data.about.location.state}
               </li>
 
@@ -185,15 +192,23 @@ const AboutPage = ({data}) => {
           </div>
         </div>
 
-        <div className="about-bio mt-6 sm:mt-12" dangerouslySetInnerHTML={{__html: data.about.biography}}>
-        </div>
+        <div
+          className="about-bio mt-6 sm:mt-12"
+          dangerouslySetInnerHTML={{ __html: data.about.biography }}
+        ></div>
       </div>
 
       <div className="about-blog mt-20 sm:mt-32 lg:mt-64 py-16 sm:py-24 lg:py-48 bg-gray-100">
         <div className="max-w-screen-xl px-4 md:px-8 lg:px-0 mx-auto">
           <div className="mb-10 lg:mb-20 max-w-6xl mx-auto">
-            <h2 className="mb-2">Sometimes I write about product strategy,<br className="hidden lg:block" /> design, and development.</h2>
-            <LinkArrow url="https://blog.kohactive.com/author/john-koht/" text="Read my posts" />
+            <h2 className="mb-2">
+              Sometimes I write about product strategy,
+              <br className="hidden lg:block" /> design, and development.
+            </h2>
+            <LinkArrow
+              url="https://blog.kohactive.com/author/john-koht/"
+              text="Read my posts"
+            />
           </div>
 
           <div className="blog-posts grid sm:grid-cols-2 md:grid-cols-3 gap-3 lg:gap-8">
