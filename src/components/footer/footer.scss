@@ -1,6 +1,27 @@
 @screen sm {
   .copyright,
-  .phantom {
-    width: 125px;
+  .open-source {
+    width: 150px;
+  }
+
+  .open-source {
+    text-align: right;
+
+    a {
+      @apply transition-all;
+      @apply duration-500;
+      @apply ease-jk-custom;
+
+      color: theme("colors.gray.500");
+      text-decoration: underline;
+
+      &:hover {
+        @apply transition-all;
+        @apply duration-500;
+        @apply ease-jk-custom;
+
+        color: theme("colors.gray.800");
+      }
+    }
   }
 }
