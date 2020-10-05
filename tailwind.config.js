@@ -50,10 +50,26 @@ module.exports = {
       },
 
       colors: {
-        red: "#ED4747",
-        blue: "#59A5D8",
-        yellow: "#FFD166",
-        green: "#06D6A0",
+        red: {
+          lighter: "#FBDADA",
+          ligh: "#F49090",
+          default: "#ED4747"
+        },
+        blue: {
+          lighter: "#DEEDF7",
+          light: "#ADD2EB",
+          default: "#59A5D8"
+        },
+        yellow: {
+          lighter: "#FFF3D6",
+          light: "#FFE7AD",
+          default: "#FFD166",
+        },
+        green: {
+          lighter: "#D7FEF4",
+          light: "#60FBD2",
+          default: "#06D6A0",
+        },
         navy: "#133C55",
         white: "#FFFFFF",
 
