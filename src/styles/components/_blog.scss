@@ -81,7 +81,7 @@ $content-max-width: 660px;
     }
 
     @screen md {
-      font-size: 22px;
+      @apply text-xl;
       line-height: 1.6;
     }
   }
