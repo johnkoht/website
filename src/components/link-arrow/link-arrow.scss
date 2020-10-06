@@ -1,6 +1,6 @@
 .link-arrow {
   display: inline;
-  color: theme("colors.blue");
+  color: theme("colors.blue.default");
   font-size: 16px;
   line-height: 1;
   position: relative;
@@ -15,7 +15,7 @@
     vertical-align: baseline;
 
     svg {
-      fill: theme("colors.blue");
+      fill: theme("colors.blue.default");
     }
   }
 

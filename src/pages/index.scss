@@ -44,11 +44,11 @@
     }
 
     &::selection {
-      background: theme("colors.blue");
+      background: theme("colors.blue.default");
     }
 
     &::-moz-selection {
-      background: theme("colors.blue");
+      background: theme("colors.blue.default");
     }
   }
 }

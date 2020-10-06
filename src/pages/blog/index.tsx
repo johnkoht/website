@@ -4,21 +4,23 @@ import { Link, graphql } from "gatsby"
 import Layout from "components/layout/layout"
 import SEO from "components/seo"
 import LinkArrow from "components/link-arrow"
+import BlogCard from "components/blog-card"
 
 import "./blog.scss"
 
 export const pageQuery = graphql`
   {
-    allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}) {
+    allMarkdownRemark(sort: {fields: frontmatter___date_published, order: DESC}) {
       nodes {
+        id
         excerpt
         fields {
           slug
         }
         frontmatter {
-          date(formatString: "MMMM DD, YYYY")
-          description
           title
+          excerpt
+          date_published(formatString: "MMMM DD, YYYY")
         }
       }
     }
@@ -29,32 +31,32 @@ const BlogIndex = ({ data }) => {
   const posts = data.allMarkdownRemark.nodes
 
   return (
-    <Layout>
+    <Layout className="layout-blog">
       <SEO title="Blog" />
 
-      <div className="max-w-4xl mx-auto mt-10 md:mt-40">
-        {posts.map(post => {
-          const title = post.frontmatter.title || post.fields.slug
+      <div class="container mx-auto pb-16 md:pb-32">
+        <div className="mb-10 lg:mb-20 max-w-3xl mx-auto text-center">
+          <h2 className="mb-2">
+            Sometimes I write about building products &amp; custom software.
+          </h2>
+        </div>
 
-          return(
-            <div key={post.fields.slug} class="w-100 p-6 md:p-16 bg-gradient-to-br from-blue to-blue-light text-white">
-              <span class="block mb-3">{post.frontmatter.date}</span>
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3 lg:gap-8">
+          {posts.map(post => {
+            const title = post.frontmatter.title || post.fields.slug
 
-              <h2 class="text-5xl">
-                <Link to={post.fields.slug} itemProp="url">
-                  <span itemProp="headline">{title}</span>
-                </Link>
-              </h2>
-              <p class="mt-2 mb-12 text-2xl font-light max-w-2xl">{post.frontmatter.description}</p>
-
-              <LinkArrow
+            return(
+              <BlogCard
+                id={post.id}
                 url={post.fields.slug}
-                text="View blog post"
-                invert="true"
+                title={title}
+                summary={post.frontmatter.excerpt || post.excerpt}
+                date={post.frontmatter.date_published}
+                key={post.id}
               />
-            </div>
-          )
-        })}
+            )
+          })}
+        </div>
       </div>
     </Layout>
   )

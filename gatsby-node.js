@@ -12,7 +12,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     `
       {
         allMarkdownRemark(
-          sort: { fields: [frontmatter___date], order: DESC }
+          sort: { fields: [frontmatter___date_published], order: DESC }
           limit: 1000
         ) {
           nodes {
@@ -64,7 +64,15 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
 
   if (node.internal.type === `MarkdownRemark`) {
-    const value = createFilePath({ node, getNode })
+    let value;
+
+    const existingSlug = node.frontmatter.slug;
+
+    if (existingSlug != null || existingSlug != "") {
+      value = `/${existingSlug}`;
+    } else {
+      value = createFilePath({ node, getNode })
+    }
 
     createNodeField({
       name: `slug`,
@@ -98,8 +106,9 @@ exports.createSchemaCustomization = ({ actions }) => {
     }
     type Frontmatter {
       title: String
-      description: String
-      date: Date @dateformat
+      excerpt: String
+      date_published: Date @dateformat
+      date_updated: Date @dateformat
     }
     type Fields {
       slug: String

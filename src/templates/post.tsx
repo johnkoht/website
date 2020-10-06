@@ -1,9 +1,11 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-// import Bio from "../components/bio"
 import Layout from "components/layout/layout"
 import SEO from "../components/seo"
+import LinkArrow from "components/link-arrow"
+
+import "./posts.scss"
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
@@ -11,51 +13,52 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   const { previous, next } = pageContext
 
   return (
-    <Layout>
+    <Layout className="layout-blog" headerBackBtn="/blog/">
       <SEO
         title={post.frontmatter.title}
-        description={post.frontmatter.description || post.excerpt}
+        description={post.frontmatter.excerpt || post.excerpt}
       />
-      <article
-        className="blog-post"
-        itemScope
-        itemType="http://schema.org/Article"
-      >
-        <header>
-          <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
-        </header>
-        <section
-          dangerouslySetInnerHTML={{ __html: post.html }}
-          itemProp="articleBody"
-        />
-      </article>
-      <nav className="blog-post-nav">
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
+
+      <div className="container mx-auto">
+        <article
+          className="blog-post"
+          itemScope
+          itemType="http://schema.org/Article"
         >
-          <li>
-            {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            )}
-          </li>
-        </ul>
-      </nav>
+          <header>
+            <h1 itemProp="headline">{post.frontmatter.title}</h1>
+            <p>{post.frontmatter.date_published}</p>
+          </header>
+
+          <section
+            dangerouslySetInnerHTML={{ __html: post.html }}
+            itemProp="articleBody"
+          />
+        </article>
+
+        <nav className="blog-post-nav">
+          <ul className="flex flex-wrap justify-between p-0">
+            <li className="blog-post-previous">
+              {previous && (
+                <LinkArrow
+                  url={previous.fields.slug}
+                  text={previous.frontmatter.title}
+                  rel="prev"
+                />
+              )}
+            </li>
+            <li>
+              {next && (
+                <LinkArrow
+                  url={next.fields.slug}
+                  text={next.frontmatter.title}
+                  rel="next"
+                />
+              )}
+            </li>
+          </ul>
+        </nav>
+      </div>
     </Layout>
   )
 }
@@ -75,8 +78,8 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
-        description
+        date_published(formatString: "MMMM DD, YYYY")
+        excerpt
       }
     }
   }

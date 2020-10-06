@@ -71,19 +71,19 @@
 }
 
 .service-item.service-strategy {
-  background-color: theme("colors.red");
+  background-color: theme("colors.red.default");
 }
 
 .service-item.service-pm {
-  background-color: theme("colors.blue");
+  background-color: theme("colors.blue.default");
 }
 
 .service-item.service-design {
-  background-color: theme("colors.yellow");
+  background-color: theme("colors.yellow.default");
 }
 
 .service-item.service-dev {
-  background-color: theme("colors.green");
+  background-color: theme("colors.green.default");
 }
 
 

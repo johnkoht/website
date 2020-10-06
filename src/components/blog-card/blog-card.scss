@@ -1,5 +1,18 @@
 .blog-card {
+  @apply bg-white;
+  @apply shadow-md;
+  @apply rounded;
+  @apply transition-all;
+  @apply duration-200;
+  @apply ease-jk-custom;
   position: relative;
+
+  &:hover {
+    @apply shadow-xl;
+    @apply transition-all;
+    @apply duration-700;
+    @apply ease-jk-custom;
+  }
 
   .blog-card-stripe {
     @apply rounded-t;
@@ -10,6 +23,22 @@
     top: 0;
     left: 0;
   }
+
+  h3 a {
+    @apply transition-all;
+    @apply duration-500;
+    @apply ease-jk-custom;
+    color: theme("colors.navy");
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+
+    &:hover {
+      @apply transition-all;
+      @apply duration-500;
+      @apply ease-jk-custom;
+      color: theme("colors.blue.default");
+    }
+  }
 }
 
 .blog-card:nth-child(2n) {
@@ -18,14 +47,14 @@
   }
 
   a.link-arrow {
-    color: theme("colors.red");
+    color: theme("colors.red.default");
 
     &:after {
-      background-color: theme("colors.red");
+      background-color: theme("colors.red.default");
     }
 
     svg {
-      fill: theme("colors.red");
+      fill: theme("colors.red.default");
     }
   }
 }
@@ -36,14 +65,50 @@
   }
 
   a.link-arrow {
-    color: theme("colors.green");
+    color: theme("colors.green.default");
 
     &:after {
-      background-color: theme("colors.green");
+      background-color: theme("colors.green.default");
     }
 
     svg {
-      fill: theme("colors.green");
+      fill: theme("colors.green.default");
+    }
+  }
+}
+
+.blog-card:nth-child(4n) {
+  .blog-card-stripe {
+    @apply bg-yellow;
+  }
+
+  a.link-arrow {
+    color: theme("colors.yellow.default");
+
+    &:after {
+      background-color: theme("colors.yellow.default");
+    }
+
+    svg {
+      fill: theme("colors.yellow.default");
+    }
+  }
+}
+
+.blog-card:nth-child(5n) {
+  .blog-card-stripe {
+    @apply bg-navy;
+  }
+
+  a.link-arrow {
+    color: theme("colors.navy");
+
+    &:after {
+      background-color: theme("colors.navy");
+    }
+
+    svg {
+      fill: theme("colors.navy");
     }
   }
 }

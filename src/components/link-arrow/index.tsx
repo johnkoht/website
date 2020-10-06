@@ -9,9 +9,10 @@ interface LinkArrowProps {
   url: string
   id?: string
   invert?: boolean
+  rel?: string
 }
 
-const LinkArrow = ({ text, url, id, invert }: LinkArrowProps) => {
+const LinkArrow = ({ text, url, id, invert, rel }: LinkArrowProps) => {
   let classes = "link-arrow"
 
   if (invert) {
@@ -19,7 +20,7 @@ const LinkArrow = ({ text, url, id, invert }: LinkArrowProps) => {
   }
 
   return (
-    <Link id={id} className={classes} to={url}>
+    <Link id={id} className={classes} to={url} rel={rel}>
       <span className="arrow-icon">
         <ArrowRight alt="Arrow Icon" />
       </span>
