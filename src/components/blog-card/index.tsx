@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 import LinkArrow from "components/link-arrow"
 
 import "./blog-card.scss"
@@ -21,7 +21,15 @@ const BlogCard = ({ id, url, title, summary, date }: BlogCardProps) => {
         <span className="block mb-4 text-gray-500">{date}</span>
 
         <h3 className="font-serif text-2xl antialiased font-bold mb-4">
-          <Link to={url}>{title}</Link>
+          <AniLink
+            cover
+            direction="down"
+            duration={.75}
+            bg="#ED4747"
+            to={url}
+          >
+            {title}
+          </AniLink>
         </h3>
         <p className="text-lg text-gray-700">{summary}</p>
       </div>
