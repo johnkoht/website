@@ -229,3 +229,8 @@ $content-max-width: 660px;
     @apply rotate-180;
   }
 }
+
+
+.gatsby-resp-image-wrapper {
+  @apply my-4;
+}

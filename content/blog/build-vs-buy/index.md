@@ -11,8 +11,6 @@ excerpt: A few helpful things to consider when contemplating whether to build or
 
 There are clear benefits and drawbacks to each approach, but which one is best for your business needs? Buying the wrong software will slow growth and impact your current processes. Building the wrong custom software can cost you triple and result in a bad product.
 
-*Want to learn more about custom software development? Check out our [in-depth article](https://blog.kohactive.com/what-is-custom-software/?utm_source=blog&amp;utm_medium=web&amp;utm_campaign=buildorbuy) custom software development, the benefits and whether it's right for your business.*
-
 To make the right decision, you'll want to consider the following questions:
 
 1. How difficult would it be to modify your workflow to match a generic technology platform?
@@ -162,5 +160,3 @@ This is common for organizations that want core requirements and data used in a 
 ## Conclusion
 
 The question of whether to build or buy boils down to cost and control. If you have low costs and need generic levels of control, than off-the-shelf software is your best option. On the other hand, if you need more control over your solution and are willing to make an investment, then custom software may be right for you.
-
-If you think a hybrid or custom solution is right for you, then please [contact us](https://www.kohactive.com/contact/). We'd be happy to discuss your options.

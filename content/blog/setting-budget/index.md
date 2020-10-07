@@ -58,5 +58,3 @@ We work on a fixed budget, variable scope model. This means that the estimated b
 All of the stories to be completed are organized in a backlog that we constantly groom on a weekly basis. All stories are tracked in our project management software throughout the project. We provide a weekly report card that tracks our progress, budget, and overall project health.
 
 Since budget is a constraint, we negotiate scope to keep the project within budget. At the end of the project, we deliver a final release in-budget and on-time.
-
-If you're assessing custom software and want to discuss budget, [reach out](https://www.kohactive.com/contact/) and chat with our team. We offer free consultations to refine your idea and create a budget and plan.

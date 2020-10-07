@@ -31,13 +31,9 @@ One of the most important reasons why an organization would build custom softwar
 
 Many businesses still rely on a lot of manual work that is time-consuming and inefficient. Custom software can automate these tasks and create systems that reduce errors and omissions. Instead of busywork, employees can focus on tasks that grow the company.
 
-***Related case study: **we helped a leading home warranty company reduce contractor dispatching from hours to automatic - [view case study](https://www.kohactive.com/work/select-home-warranty/).*
-
 ### Process & Workflow Optimization
 
 All businesses have various routine tasks and processes that need to be completed and confirmed. Custom software can help build systems that improve efficiency, reduce errors, and improve the bottom line for a business. With process and workflow optimization software, management can view insights into the process and make improvements based on collected data.
-
-***Related case study: **we helped a leading transportation company launch a mobile app to improve their fleet driver workflow, efficiency and accuracy - [view case study](https://www.kohactive.com/work/logistics-fleet-driver-mobile-app/).*
 
 ### Unique Workflow or Process
 
@@ -46,8 +42,6 @@ Some organizations can license off-the-shelf software and adapt their workflow t
 ### Scalability
 
 If your organization intends on growing, it might make sense to build custom software that can scale with your organization. As companies grow, their processes improve, and custom software can evolve to match the growing business needs. This is especially important for companies that have various departments, workflows, and teams working together.
-
-***Related case study: **we helped an auction software company scale to billions of transactions per year - [view case study](https://www.kohactive.com/work/nextlot-auction-software/).*
 
 ### Future-Thinking
 
@@ -78,5 +72,3 @@ While answering these questions, it's important also to consider your budget and
 Custom software can be a powerful tool that helps organizations innovate and grow. Unlike off-the-shelf products, custom software is designed and built specifically for an organization or a set of users. While it can be expensive and time-consuming, the payoff in efficiency, process improvements, and competitive advantage can transform an organization into a leader.
 
 It's essential to recognize that custom software is an investment that should typically have a realizable ROI. How much money will this software save us per year? How much time is opened up because of this software? How many errors and omissions will be eliminated because of this software? When custom software is approached in this manner, it will lead to exceptional results for your organization.
-
-If you're interested in learning more about custom software or discussing a possible project, then [reach out](https://ww.kohactive.com/contact/) to our team for a free consultation.

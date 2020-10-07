@@ -38,7 +38,9 @@ By focusing on the human needs, we are creating solutions designed to eliminate 
 #### Maximized ROI
 
 Building the wrong product can be costly. Some companies pour millions of dollars into products that fail as soon as they go live. Through HCD, organizations can avoid building the wrong products and solving the wrong needs. Less time is wasted getting feedback, onboarding users, and fixing the incorrect assumptions made during planning. Focusing on the people will maximize the return on your investment.
-![](/content/images/2018/09/components-2.jpg)
+
+![](/./components-2.jpg)
+
 ## Main Concepts of Human-Centered Design
 
 Human-centered design can be implemented in various ways. It’s a philosophy, not a rigid process to be followed. The three core aspects of HCD are Empathy, Ideation, and Experimentation. To utilize human-centered design, organizations need to weave these concepts into their processes and shift their mindset to incorporate this philosophy.
@@ -85,7 +87,9 @@ The project charter is an overview of the project and a master document to what 
 - Goals & success metrics
 
 Once we've identified the problem and created our charter, then we're ready to start solving.
-![](/content/images/2018/09/hcd-user-personas.jpg)
+
+![](/./hcd-user-personas.jpg)
+
 **User Personas**
 
 The project charter defines the business problem that we are solving and identifies the humans that we're solving for. While the end users will be part of our process, it's essential to define who they are as an archetype. [User personas](https://www.kohactive.com/playbook/discovery/personas/) let us identify their background, technical skills, needs, and motivations.
@@ -143,5 +147,3 @@ Once development starts, agile methodologies can help facilitate the human-cente
 Human-centered design can help organizations innovate faster. There's a reason that top companies like Apple, Capital One, and BCBS are using it.  Remember, HCD isn't a rigid process, it's a philosophy that organizations adopt to improve they way the create new products and services. You don't need to get company-wide adoption, start with a single team and product and grow from there.
 
 Not sure where to start? It's simple – start by talking to the humans behind your business needs. Find out who they are, what they do, and how to build products that make them more successful.
-
-If you want to learn more about how human-centered design can help your organization then [reach out](https://www.kohactive.com/contact/).

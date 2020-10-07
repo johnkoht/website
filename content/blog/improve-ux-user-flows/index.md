@@ -10,7 +10,9 @@ excerpt: Create meaningful user experiences by solving real user needs.
 Design is a process. But it doesn’t have to be a difficult and unorganized process. Over the past few years, we've added new tools and techniques that have streamlined and improved our process. One of the most important techniques is designing user flows, which is part of our approach to [human-centered design](https://blog.kohactive.com/human-centered-design/)
 
 The problem with sitemaps, wireframes and page layouts is that they don't address the users' needs. Instead, they just create a visual architecture for what pages will look like. User flows, on the other hand, allow us to address users’ needs before we begin the visual designs process, which should help us create better product.
-![](/content/images/2018/09/image-1.png)
+
+![Illustration of human without any faces](./image-1.png)
+
 ## User Flows Begin With The User
 
 User experience isn't just about smart architecture and good design, it's the intersection of the user and business objectives. Before you begin designing sitemaps, wireframes or layouts, you should be focusing on [User Research](https://www.kohactive.com/playbook/designing/user-research/). Who are they, what are they trying to accomplish and how can you make their experience more succesful. We create [User Personas](https://www.kohactive.com/playbook/discovery/personas/) to define our end users.
@@ -42,7 +44,9 @@ User flows come in few different formats. First we start with low-fidelity short
 We begin our user flows with shorthand diagrams that we sketch on paper or on the whiteboard. [Ryan Singer](https://www.twitter.com/rjs), of Basecamp, has [a great post](https://signalvnoise.com/posts/1926-a-shorthand-for-designing-ui-flows) on writing shorthand flows.
 
 We typically create our first user flows during our planning session or design sprints. It's important to address flows prior to creating sitemaps or wireframes.
-![](/content/images/2018/09/image-2.png)
+
+![Examples of wireframe-based user flows](./image-2.png)
+
 ### Wireframe Flows
 
 Once we've finalized the first iteration of wireframes, we'll use them to create a visual flow. Wireframe flows are a simple way to visualize the entire experience. This should fit well with our information architecture as well. This step isn't required but it's a nice way to see a higher level view of your UX.
