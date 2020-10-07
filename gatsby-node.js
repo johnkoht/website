@@ -64,12 +64,12 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
 
   if (node.internal.type === `MarkdownRemark`) {
-    let value;
+    let value
 
-    const existingSlug = node.frontmatter.slug;
+    const existingSlug = node.frontmatter.slug
 
     if (existingSlug != null || existingSlug != "") {
-      value = `/${existingSlug}`;
+      value = `/${existingSlug}`
     } else {
       value = createFilePath({ node, getNode })
     }

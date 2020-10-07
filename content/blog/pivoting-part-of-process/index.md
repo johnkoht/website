@@ -17,7 +17,7 @@ A startup is not a business––it's a process–– with a goal to "search for
 
 ## What is a Pivot?
 
-Eric Ries, author of *The Lean Startup*, defines a pivot as "a structured course correction designed to test a new fundamental hypothesis about the product, strategy, and engine of growth". A pivot is not a reboot or complete change of the business model, it's a special kind of change designed to test a new hypothesis of the underlying business model.
+Eric Ries, author of _The Lean Startup_, defines a pivot as "a structured course correction designed to test a new fundamental hypothesis about the product, strategy, and engine of growth". A pivot is not a reboot or complete change of the business model, it's a special kind of change designed to test a new hypothesis of the underlying business model.
 
 It's important to note that while startups can pivot, the overarching vision rarely changes. A pivot is a change in the business that seeks a new means of fulfilling the vision.
 
@@ -49,13 +49,13 @@ Through customer development, Justin and his team learned that users were intere
 
 After the platform became popular for pirated live-streams sports, the legal weight of corporations began to cause problems. Justin and his team knew it was time for a change. After talking to customers and analyzing the data, they realized that video gamers have also built a niche on their platform. The company pivoted to Twitch.tv, a live-streaming platform for gamers.
 
-In 2014, Twitch.tv was acquired by Amazon for $1 billion. It had 55 million active users. [Listen to Justin Kan talk to Y Combinator's Aaron Harris](https://soundcloud.com/akharris/startup-school-radio-ep-2-justin-kan-mathilde-collin) about  his experience. Also, learn more Twitch's pivot, [check this out](http://www.fastcompany.com/1839300/many-pivots-justintv-how-livecam-show-became-home-video-gaming-superstars).
+In 2014, Twitch.tv was acquired by Amazon for \$1 billion. It had 55 million active users. [Listen to Justin Kan talk to Y Combinator's Aaron Harris](https://soundcloud.com/akharris/startup-school-radio-ep-2-justin-kan-mathilde-collin) about his experience. Also, learn more Twitch's pivot, [check this out](http://www.fastcompany.com/1839300/many-pivots-justintv-how-livecam-show-became-home-video-gaming-superstars).
 
 #### Slack
 
-Slack is the darling of the startup community right now. It's an office communication tool that allows teams to chat in real-time. With over 2 million active daily users, Slack is the fastest startup in history to hit a $2 billion valuation.
+Slack is the darling of the startup community right now. It's an office communication tool that allows teams to chat in real-time. With over 2 million active daily users, Slack is the fastest startup in history to hit a \$2 billion valuation.
 
-Slack didn't start off as a chat application, though. Actually, they started off as an online game called Glitch. They had over $17 million in funding but knew that their business model wasn't scalable. They had a team of 45 people who worked on the game for over three years. Founder Steward Butterfield, who also found and sold Flickr, had to make a decision, pivot or die.
+Slack didn't start off as a chat application, though. Actually, they started off as an online game called Glitch. They had over \$17 million in funding but knew that their business model wasn't scalable. They had a team of 45 people who worked on the game for over three years. Founder Steward Butterfield, who also found and sold Flickr, had to make a decision, pivot or die.
 
 While shutting down Glitch, Butterfield and his team started to think about what they could do next. Slack was born out of their communication style. The team was using IRC to communicate in real-time, collaborate and build their company. After reflecting, they realized that IRC had become an important part of process––but it wasn't the best solution. They had spent time improving and building on IRC so why not build a better, more focused product.
 
@@ -63,7 +63,7 @@ Slack was born from their own needs when building their company. Millions of oth
 
 #### Instagram
 
-In 2012, Instagram was acquired by Facebook for $1 billion. They had 27 million active iOS users and had just launched on Android the week before. But Instagram wasn't the original idea, it was a born out of a previous idea.
+In 2012, Instagram was acquired by Facebook for \$1 billion. They had 27 million active iOS users and had just launched on Android the week before. But Instagram wasn't the original idea, it was a born out of a previous idea.
 
 Founders Kevin Systrom and Mike Krieger originally designed a location-based app called Burbn. That app allowed users to check-in, share photos and posts. The original app was "cluttered and overrun by features", according to Systrom. The team decided that the geolocation market was crowded and they wanted to "[focus on being really good at one thing](https://www.quora.com/What-is-the-genesis-of-Instagram)".
 
@@ -71,7 +71,7 @@ After talking to early users, they found that people were really interested in s
 
 #### Pinterest
 
-Pinterest is the most popular visual bookmarking tool with over [100 million active users and an $11 billion valuation](http://expandedramblings.com/index.php/pinterest-stats/).
+Pinterest is the most popular visual bookmarking tool with over [100 million active users and an \$11 billion valuation](http://expandedramblings.com/index.php/pinterest-stats/).
 
 Pinterest actually started off as an app called Tote, which was designed to make mobile shopping easier. It allowed users to create collections of products and get notified as they went on sale. Tote made browsing more enjoyable than going through catalogs, but it failed to provide a successful payment solution.
 
@@ -83,7 +83,7 @@ You can learn more about [the Pinterest story](http://www.fastcompany.com/300198
 
 #### YouTube
 
-YouTube has [1 billion active users and over 4 billion videos watched each day](http://expandedramblings.com/index.php/youtube-statistics/). It was acquired in 2006 by Google for $1.65 billion.
+YouTube has [1 billion active users and over 4 billion videos watched each day](http://expandedramblings.com/index.php/youtube-statistics/). It was acquired in 2006 by Google for \$1.65 billion.
 
 When Jawed Karim and co-founders started YouTube, they "[didn't even know how to describe our new product. To generate interest, we just said it was a new kind of dating site](http://motherboard.vice.com/read/10-years-ago-today-youtube-launched-as-a-dating-website)". The dating site wasn't working. They couldn't even pay people to post videos to the platform.
 

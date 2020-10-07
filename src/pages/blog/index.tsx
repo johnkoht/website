@@ -10,7 +10,9 @@ import "./blog.scss"
 
 export const pageQuery = graphql`
   {
-    allMarkdownRemark(sort: {fields: frontmatter___date_published, order: DESC}) {
+    allMarkdownRemark(
+      sort: { fields: frontmatter___date_published, order: DESC }
+    ) {
       nodes {
         id
         excerpt
@@ -45,7 +47,7 @@ const BlogIndex = ({ data }) => {
           {posts.map(post => {
             const title = post.frontmatter.title || post.fields.slug
 
-            return(
+            return (
               <BlogCard
                 id={post.id}
                 url={post.fields.slug}

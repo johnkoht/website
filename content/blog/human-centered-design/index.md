@@ -118,7 +118,7 @@ Once we have our first prototype, it's time to interview users and get real feed
 
 User interviews will shed light on the decisions and assumptions we made during our discovery process. Now it's time to iterate on those ideas.
 
-If our assumptions were way off, it's time to go back to the drawing board and start over. This *should never* be the case. If you've done research and discovery, then you won't end up in this situation. If you are, though, you should think about the users that you brought in to this process, perhaps their not the best subjects. Also, look into how the research was initially conducted, did we do something wrong?
+If our assumptions were way off, it's time to go back to the drawing board and start over. This _should never_ be the case. If you've done research and discovery, then you won't end up in this situation. If you are, though, you should think about the users that you brought in to this process, perhaps their not the best subjects. Also, look into how the research was initially conducted, did we do something wrong?
 
 If you're 100% spot on, then you're in great shape and should move on to the production phase, but this is rarely the case. There are always some improvements to be made.
 
@@ -144,6 +144,6 @@ Once development starts, agile methodologies can help facilitate the human-cente
 
 ## Conclusion
 
-Human-centered design can help organizations innovate faster. There's a reason that top companies like Apple, Capital One, and BCBS are using it.  Remember, HCD isn't a rigid process, it's a philosophy that organizations adopt to improve they way the create new products and services. You don't need to get company-wide adoption, start with a single team and product and grow from there.
+Human-centered design can help organizations innovate faster. There's a reason that top companies like Apple, Capital One, and BCBS are using it. Remember, HCD isn't a rigid process, it's a philosophy that organizations adopt to improve they way the create new products and services. You don't need to get company-wide adoption, start with a single team and product and grow from there.
 
 Not sure where to start? It's simple – start by talking to the humans behind your business needs. Find out who they are, what they do, and how to build products that make them more successful.

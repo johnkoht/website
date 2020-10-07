@@ -9,7 +9,6 @@ excerpt: How to identify and validate your startup before you start
 
 Building a startup is tough. Statistically, 90% of startups fail. A [compilation of startup failures by CBInsights](https://www.cbinsights.com/blog/startup-failure-post-mortem/) reveals that the majority of them never find a product market fit. Some of these startups spend millions of dollars just to come to this realization. Luckily, there is quite a bit that founders can do to validate their idea, find their market, and understand their customers.
 
-
 ## Start With a Mission
 
 Remember that you're building a business, not an app or a website. A business should be driven by a mission that identifies its goals and strategy. Even if you’re in the early stages of building, it’s super important to start with a mission. The mission should be a big idea that serves as a guiding principle for the company, which can be as simple or complex as needed. It’s typically best to start simple, nothing is set in stone. You can always expand or change your mission as company objectives change. Alternatively, you can create an internal mission, and an external, customer facing mission.
@@ -19,7 +18,6 @@ For example, Airbnb's mission is short, simple, and to the point: "Belong anywhe
 While Uber's mission is a bit more lofty and complex: "Transportation, as reliable as running water, everywhere for everyone." This likely was not the mission when the company started in 2011, but given the global impact seen by the company, this mission makes perfect sense for what the company is accomplishing, and continues to try to accomplish.
 
 For a great overview of startup missions statements, be sure to check out [Inc. Magazine’s comprehensive list](http://www.inc.com/larry-kim/30-inspiring-billion-dollar-startup-company-mission-statements.html).
-
 
 ## Understand Your Business Model
 
@@ -53,12 +51,10 @@ Competitive analysis is a great way to enhance your business model. While review
 - How are you better, faster, or cheaper?
 - What's your unfair advantage?
 
-
 Google has a few great tools for conducting simple market research:
 
 - [Google Trends](https://www.google.com/trends/), which shows you search trends for key items
 - [Google Insights](http://www.google.com/insights/), which breaks down search data by location
-
 
 You can also [contact us](https://www.kohactive.com/contact/) if you would like help with customer research.
 
@@ -73,10 +69,8 @@ Customer development is the process of identifying, interviewing, and understand
 3. **Identify Pains and Needs**: Get an idea of their pain points and what their needs are. Try to extract as much detail as possible.
 4. **Notes**: Take notes. Lots of notes.
 
-
 People love to talk, especially when somebody is listening. Learn to become a good listener and you'll both enjoy the experience.
 
 Once you have this data, refer back to it often. And continually get new feedback as your product evolves.
 
 Customer development is a great way to identify what kind of product you must build to find a product/market fit. Likewise, the process can even help you find your first customers. The people that take time to talk to you will be even more vested in your idea as they feel that they are part of something big.
-

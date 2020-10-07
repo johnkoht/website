@@ -67,7 +67,10 @@ export const query = graphql`
       name
       short_bio
     }
-    allMarkdownRemark(sort: {fields: frontmatter___date_published, order: DESC}, limit: 3) {
+    allMarkdownRemark(
+      sort: { fields: frontmatter___date_published, order: DESC }
+      limit: 3
+    ) {
       nodes {
         excerpt
         fields {
@@ -85,7 +88,7 @@ export const query = graphql`
 `
 
 const AboutPage = ({ data }) => {
-  const posts = data.allMarkdownRemark.nodes;
+  const posts = data.allMarkdownRemark.nodes
 
   let kidsString
   if (data.about.family.kids.length) {
@@ -211,17 +214,14 @@ const AboutPage = ({ data }) => {
               Sometimes I write about product strategy,
               <br className="hidden lg:block" /> design, and development.
             </h2>
-            <LinkArrow
-              url="/blog"
-              text="Read my posts"
-            />
+            <LinkArrow url="/blog" text="Read my posts" />
           </div>
 
           <div className="blog-posts grid sm:grid-cols-2 md:grid-cols-3 gap-3 lg:gap-8">
             {posts.map(post => {
               const title = post.frontmatter.title || post.fields.slug
 
-              return(
+              return (
                 <BlogCard
                   id={post.id}
                   url={post.fields.slug}

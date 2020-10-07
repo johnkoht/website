@@ -7,7 +7,7 @@ tags: Lean Startup, Startups, User Testing, Customer Development
 excerpt: User testing is about solving problems, check out the various techniques and platforms.
 ---
 
-*This is a follow-up to another article. If you're interested in the benefits of User Testing, [check out the article](./user-testing-what-it-is-and-why-you-should-do-it/)*
+_This is a follow-up to another article. If you're interested in the benefits of User Testing, [check out the article](./user-testing-what-it-is-and-why-you-should-do-it/)_
 
 A few years ago, we built an SMS-based photo sharing app called memms during an internal hackathon.
 
@@ -19,7 +19,7 @@ But what if we didn't show any users and just launched the product? How many use
 
 While this is a fairly simplified example of user testing, it helps illustrate how effective basic testing can be.
 
-User testing isn't a new concept. In fact, it's  [been around since World War II](http://www.thehumanfactorblog.com/2009/01/06/a-short-history-of-human-factors-and-ergonomics/). They didn't have touch screens back then, though––it was mostly machinery.
+User testing isn't a new concept. In fact, it's [been around since World War II](http://www.thehumanfactorblog.com/2009/01/06/a-short-history-of-human-factors-and-ergonomics/). They didn't have touch screens back then, though––it was mostly machinery.
 
 ![Lean Startup: Build. Measure. Learn.](./buildmeasurelearn.png)
 
@@ -27,13 +27,9 @@ User testing isn't a new concept. In fact, it's  [been around since World War II
 
 There are various user tests that you can conduct in order to gain insight into a specific problem. Regardless of what you’re testing, there are two ways to conduct a test:
 
--
-**Moderated**: A method in which a moderator is present to facilitate the test. (This can be done remotely as well.) During this type of test, the moderator can follow up and interact with the subject.
+- **Moderated**: A method in which a moderator is present to facilitate the test. (This can be done remotely as well.) During this type of test, the moderator can follow up and interact with the subject.
 
--
-**Unmoderated**: No facilitator is present and the user only has instructions to follow in order to complete the test. This is a good way to collect a lot of data quickly without much overhead.
-
-
+- **Unmoderated**: No facilitator is present and the user only has instructions to follow in order to complete the test. This is a good way to collect a lot of data quickly without much overhead.
 
 Deciding which is best for you will depend on the objective. While unmoderated tests are much easier to perform, you will typically learn much more through the open dialog of a moderated test. The type of test you are performing will also help you determine the needs.
 
@@ -137,7 +133,7 @@ UserBrain is a "think out loud" platform that focuses primarily on websites and 
 
 Unlike other platforms, UserBrain sends you weekly (or monthly) videos of users testing out your website. The goal is to make user testing an ongoing part of your process––which could be very powerful if you are changing your site frequently. UserBrain requires real websites that are available to a tester, so mockup and prototype testing is not an option.
 
-UserBrain pricing varies. It cost $49/month for one video per week, and $139/month for 3 videos per week. There is also a cheaper option at $29/month for a single video each month.
+UserBrain pricing varies. It cost $49/month for one video per week, and $139/month for 3 videos per week. There is also a cheaper option at \$29/month for a single video each month.
 
 **Website:**[userbrain.net](https://userbrain.net/)
 
@@ -147,7 +143,7 @@ UserBrain pricing varies. It cost $49/month for one video per week, and $139/mon
 
 UserFeel is another platform that provides "think out loud" feedback from users. Similar to UserBrain, they focus on websites and web-based applications.
 
-Compared to the other platforms, UserFeel is much more cost friendly with videos starting at $39 or less. UserFeel also offers multilingual testing for those with international products.
+Compared to the other platforms, UserFeel is much more cost friendly with videos starting at \$39 or less. UserFeel also offers multilingual testing for those with international products.
 
 Unlike other platforms, UserFeel requires that you create and pay for your first project (test) when you sign up.
 
@@ -195,7 +191,7 @@ UsabilityHub is one of the most popular platforms for these kinds of tests. They
 
 Depending on your goals, you can create and manage the test that is required. With UsabilityHub, you select the number of responses you want, as well as basic demographic information.
 
-Pricing is fairly simple: 1 credit per standard response and 3 per targeted response. They also offer a pro subscription for $99 that provides a few additional features.
+Pricing is fairly simple: 1 credit per standard response and 3 per targeted response. They also offer a pro subscription for \$99 that provides a few additional features.
 
 **Website:**[usabilityhub.com](https://www.usabilityhub.com/)
 
@@ -205,7 +201,7 @@ Pricing is fairly simple: 1 credit per standard response and 3 per targeted resp
 
 UserThink is focused primarily on testing landing pages. They focus on helping you create landing pages that convert better through user testing and feedback. They support live websites as well as prototypes and mockups.
 
-Testers on UserThink view your design and then answer custom questions. The responses are aggregated for your review following the test. The pricing is simple but not flexible. They offer three plans: $39 for 6 responses, $69 for 12 responses and $99 for 18 responses.
+Testers on UserThink view your design and then answer custom questions. The responses are aggregated for your review following the test. The pricing is simple but not flexible. They offer three plans: $39 for 6 responses, $69 for 12 responses and \$99 for 18 responses.
 
 **Website:**[userthink.com](https://www.userthink.com/)
 
@@ -213,7 +209,7 @@ Testers on UserThink view your design and then answer custom questions. The resp
 
 #### Feedback Army
 
-Feedback Army is focused mostly on feedback for a landing page. Their process is simple, and they boast that you can create a test in "two minutes.” You simply add a link and leave 4-6 questions to ask the testers. Their pricing is simple: each test costs $40 and you'll receive 10 responses.
+Feedback Army is focused mostly on feedback for a landing page. Their process is simple, and they boast that you can create a test in "two minutes.” You simply add a link and leave 4-6 questions to ask the testers. Their pricing is simple: each test costs \$40 and you'll receive 10 responses.
 
 **Website:**[feedbackarmy.com](https://www.feedbackarmy.com/)
 

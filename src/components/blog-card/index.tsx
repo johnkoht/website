@@ -14,10 +14,7 @@ interface BlogCardProps {
 
 const BlogCard = ({ id, url, title, summary, date }: BlogCardProps) => {
   return (
-    <div
-      className="blog-card py-8 lg:py-16 px-4 lg:px-8 flex flex-col"
-      id={id}
-    >
+    <div className="blog-card py-8 lg:py-16 px-4 lg:px-8 flex flex-col" id={id}>
       <div className="blog-card-stripe" />
 
       <div className="blog-card-content mb-12 lg:mb-16">

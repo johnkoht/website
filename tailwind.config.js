@@ -53,12 +53,12 @@ module.exports = {
         red: {
           lighter: "#FBDADA",
           ligh: "#F49090",
-          default: "#ED4747"
+          default: "#ED4747",
         },
         blue: {
           lighter: "#DEEDF7",
           light: "#ADD2EB",
-          default: "#59A5D8"
+          default: "#59A5D8",
         },
         yellow: {
           lighter: "#FFF3D6",

@@ -32,11 +32,11 @@ We understand that getting key stakeholders together for an extended workshop ca
 
 ## Project Charter
 
-We'll kick off the workshop by understanding the *why*. *Why* are we here? We'll build a shared understanding of the project by developing the project charter. The project charter is a document that outlines the problem statement, timeline, players, and project goals. The charter helps us stay focused and ensures the product decisions we make fit in line with our goals.
+We'll kick off the workshop by understanding the _why_. _Why_ are we here? We'll build a shared understanding of the project by developing the project charter. The project charter is a document that outlines the problem statement, timeline, players, and project goals. The charter helps us stay focused and ensures the product decisions we make fit in line with our goals.
 
 #### Problem Statement
 
-The first part of the charter identifies the problem statement. What is the problem that we're solving for? The problem statement should be phrased as a question. The statement should provide clarity into the product that we're building. It imposes constraint so we can focus on *why* we are building this product.
+The first part of the charter identifies the problem statement. What is the problem that we're solving for? The problem statement should be phrased as a question. The statement should provide clarity into the product that we're building. It imposes constraint so we can focus on _why_ we are building this product.
 
 #### Timeline
 

@@ -71,7 +71,7 @@ A few years ago, during the design workshop with one of our clients, we discusse
 
 Every founder and designer start with assumptions about how their users are going to use their product. Sometimes they are spot on, other times they are incredibly surprised. This is especially important for existing products that are adding new features or redesigning existing ones.
 
-In *The Lean Startup*, Eric Ries discusses how they build IMVUs Instant Messenger integration. They assumed users wanted to use existing software and just include an addon. In reality, their users wanted a completely separate community to engage with. They could have saved a lot of time and money by talking to customers, showing them a wireframe or prototype and learning.
+In _The Lean Startup_, Eric Ries discusses how they build IMVUs Instant Messenger integration. They assumed users wanted to use existing software and just include an addon. In reality, their users wanted a completely separate community to engage with. They could have saved a lot of time and money by talking to customers, showing them a wireframe or prototype and learning.
 
 ##### Avoid building confusing navigations
 

@@ -14,7 +14,12 @@ interface LayoutProps {
   headerBackBtn: string
 }
 
-const Layout = ({ children, invertHeader, className, headerBackBtn }: LayoutProps) => {
+const Layout = ({
+  children,
+  invertHeader,
+  className,
+  headerBackBtn,
+}: LayoutProps) => {
   return (
     <>
       <Header invert={invertHeader} headerBackBtn={headerBackBtn} />

@@ -23,9 +23,7 @@ const Header = ({ invert, headerBackBtn }: HeaderProps) => {
           </Link>
         )}
 
-        {!headerBackBtn && (
-          <div className="header-spacer"></div>
-        )}
+        {!headerBackBtn && <div className="header-spacer"></div>}
 
         <Link to="/" className="ml-auto header-brand">
           <Logo alt="John Koht Logo" />
