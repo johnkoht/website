@@ -67,20 +67,29 @@ export const query = graphql`
       name
       short_bio
     }
-    allBlogPosts(limit: 3) {
-      edges {
-        node {
-          url
-          title
-          summary
-          id__normalized
+    allMarkdownRemark(
+      sort: { fields: frontmatter___date_published, order: DESC }
+      limit: 3
+    ) {
+      nodes {
+        excerpt
+        fields {
+          slug
         }
+        frontmatter {
+          title
+          excerpt
+          date_published(formatString: "MMMM DD, YYYY")
+        }
+        id
       }
     }
   }
 `
 
 const AboutPage = ({ data }) => {
+  const posts = data.allMarkdownRemark.nodes
+
   let kidsString
   if (data.about.family.kids.length) {
     let kids = data.about.family.kids
@@ -205,22 +214,24 @@ const AboutPage = ({ data }) => {
               Sometimes I write about product strategy,
               <br className="hidden lg:block" /> design, and development.
             </h2>
-            <LinkArrow
-              url="https://blog.kohactive.com/author/john-koht/"
-              text="Read my posts"
-            />
+            <LinkArrow url="/blog" text="Read my posts" />
           </div>
 
           <div className="blog-posts grid sm:grid-cols-2 md:grid-cols-3 gap-3 lg:gap-8">
-            {data.allBlogPosts.edges.map(({ node }) => (
-              <BlogCard
-                id={node.id__normalized}
-                url={node.url}
-                title={node.title}
-                summary={node.summary}
-                key={node.id__normalized}
-              />
-            ))}
+            {posts.map(post => {
+              const title = post.frontmatter.title || post.fields.slug
+
+              return (
+                <BlogCard
+                  id={post.id}
+                  url={post.fields.slug}
+                  title={title}
+                  summary={post.frontmatter.excerpt || post.excerpt}
+                  date={post.frontmatter.date_published}
+                  key={post.id}
+                />
+              )
+            })}
           </div>
         </div>
       </div>

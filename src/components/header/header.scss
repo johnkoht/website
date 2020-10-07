@@ -13,12 +13,18 @@ header.header {
   }
 
   .btn-menu,
-  .header-spacer {
+  .header-spacer,
+  .header-back-btn {
     width: 66px;
   }
 
   .btn-menu {
     z-index: 1099;
+  }
+
+  .header-back-btn svg {
+    fill: theme("colors.gray.800");
+    max-width: 100%;
   }
 
   .header-brand {
@@ -27,7 +33,7 @@ header.header {
     svg {
       transition: all .6s cubic-bezier(0.165, 0.840, 0.440, 1.000);
       transform: scale(1, 1);
-      fill: theme("colors.blue");
+      fill: theme("colors.blue.default");
       height: 55px;
 
       @screen sm {
@@ -55,7 +61,8 @@ main {
     fill: theme("colors.white");
   }
 
-  .btn-menu svg {
+  .btn-menu svg,
+  .header-back-btn svg {
     fill: theme("colors.gray.100");
   }
 }

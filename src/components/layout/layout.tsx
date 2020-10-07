@@ -9,14 +9,21 @@ import "./layout.scss"
 
 interface LayoutProps {
   children: node
+  className: string
   invertHeader?: string
+  headerBackBtn: string
 }
 
-const Layout = ({ children, invertHeader }: LayoutProps) => {
+const Layout = ({
+  children,
+  invertHeader,
+  className,
+  headerBackBtn,
+}: LayoutProps) => {
   return (
     <>
-      <Header invert={invertHeader} />
-      <main>{children}</main>
+      <Header invert={invertHeader} headerBackBtn={headerBackBtn} />
+      <main className={className}>{children}</main>
       <Footer />
     </>
   )

@@ -63,6 +63,9 @@ class NavigationModal extends React.Component {
                 <Link to="/about/">About</Link>
               </li>
               <li>
+                <Link to="/blog/">Blog</Link>
+              </li>
+              <li>
                 <Link
                   to="https://www.flickr.com/photos/johnkoht/"
                   className="link-external"
