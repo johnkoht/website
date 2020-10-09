@@ -94,7 +94,6 @@ const AboutPage = ({ data }) => {
   if (data.about.family.kids.length) {
     let kids = data.about.family.kids
     let lastName = kids[0].last_name
-    console.log(data.about.family.kids)
     let firstNames = kids.map(kid => kid.first_name)
     kidsString = `${firstNames.join(", ")} ${lastName}`
   }
