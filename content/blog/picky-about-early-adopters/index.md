@@ -1,8 +1,8 @@
 ---
 title: "Early Adopters: Be Picky About Who You Serve"
 slug: early-adopters-be-picky-about-who-you-serve
-date_published: 2020-10-07T20:47:52.000Z
-date_updated: 2020-10-07T20:47:52.000Z
+date_published: 2020-10-08T20:47:52.000Z
+date_updated: 2020-10-08T20:47:52.000Z
 tags: Product Strategy, Product Development, Startups
 excerpt: Finding and partnering with the right early adopters can make or break your product.
 ---
