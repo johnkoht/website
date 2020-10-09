@@ -19,7 +19,7 @@ const Footer = () => (
       }
     `}
     render={data => (
-      <footer className="footer py-8 sm:py-12 bg-white">
+      <footer className="footer sm:px-8 lg:px-0 py-8 sm:py-12 bg-white">
         <div className="max-w-screen-xl px-4 md:px-0 mx-auto">
           <div className="flex flex-wrap flex-col sm:flex-row">
             <span className="copyright my-3 mx-auto sm:m-0 sm:mr-auto text-gray-500">
@@ -38,7 +38,7 @@ const Footer = () => (
               ))}
             </div>
 
-            <span className="open-source m-auto sm:ml-auto sm:order-3">
+            <span className="open-source mx-auto sm:m-0 sm:ml-auto sm:order-3">
               <a
                 href="https://github.com/johnkoht/website"
                 target="_blank"

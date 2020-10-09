@@ -55,7 +55,7 @@ const IndexPage = ({ data }) => (
           building
           <br className="hidden lg:block" /> impactful products &amp; teams.
         </h1>
-        <LinkArrow url="/about/" text="Learn more about me" />
+        <LinkArrow url="/about/" text="Learn more about me" aniBg="#59A5D8" />
       </div>
     </div>
 
