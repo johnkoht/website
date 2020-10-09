@@ -2,12 +2,21 @@ $content-max-width: 660px;
 
 .layout-blog {
   @apply bg-gray-100;
-  @apply pt-48;
+  @apply pt-32;
+
+  @screen md {
+    @apply pt-48;
+  }
 }
 
 .blog-post {
   @apply font-serif;
   @apply text-gray-800;
+  @apply px-4;
+
+  @screen lg {
+    @apply px-0;
+  }
 }
 
 .blog-post header {
@@ -19,9 +28,17 @@ $content-max-width: 660px;
   h1 {
     @apply font-serif;
     @apply mb-4;
-    font-size: 55px;
+    font-size: 35px;
     font-weight: bold;
     line-height: 1.4;
+
+    @screen md {
+      font-size: 55px;
+    }
+  }
+
+  p {
+    padding: 0;
   }
 }
 
@@ -81,7 +98,7 @@ $content-max-width: 660px;
     }
 
     @screen md {
-      @apply text-xl;
+      font-size: 1.2rem;
       line-height: 1.6;
     }
   }
@@ -90,6 +107,7 @@ $content-max-width: 660px;
   h3,
   h4,
   h5 {
+    @apply font-sans;
     color: theme("colors.gray.800");
     font-weight: 800;
 
@@ -103,10 +121,14 @@ $content-max-width: 660px;
   }
 
   h2 {
-    font-size: 35px;
-    line-height: 1.2;
+    font-size: 24px;
+    line-height: 1.4;
     padding: 30px 0 15px 0;
     margin: 0 auto;
+
+    @screen md {
+      font-size: 30px;
+    }
   }
 
   h3 {
@@ -221,8 +243,18 @@ $content-max-width: 660px;
 }
 
 .blog-post-nav {
-  @apply mt-12;
-  @apply py-12;
+  @apply py-6;
+  @apply px-4;
+
+  @screen md {
+    @apply mt-12;
+    @apply py-10;
+    @apply px-0;
+  }
+
+  li {
+    @apply py-4;
+  }
 
   li.blog-post-previous a svg {
     @apply transform;
