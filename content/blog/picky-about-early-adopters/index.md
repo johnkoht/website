@@ -7,7 +7,7 @@ tags: Product Strategy, Product Development, Startups
 excerpt: Finding and partnering with the right early adopters can make or break your product.
 ---
 
-Any successful founder will you that team, product, and market are the most critical factors to building a successful business. And you'll probably hear many of them talk about being "customer-obsessed" or "customer first." But one of the most underrated factors in their success is not just the customers but also the quality of their early adopters.
+Any successful founder will tell you that team, product, and market are the most critical factors to building a successful business. And you'll probably hear many of them talk about being "customer-obsessed" or "customer first." But one of the most underrated factors in their success is not just the customers but also the quality of their early adopters.
 
 While we can all agree that early adopters are good, they are not all created equal. The wrong users can derail entrepreneurs, causing them to lose focus and solve the wrong problems. Like a bad team or poor product, the wrong early adopters can push a company towards failure.
 
