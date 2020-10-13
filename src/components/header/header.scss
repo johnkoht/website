@@ -52,17 +52,20 @@ header.header {
   }
 }
 
-main {
-  margin-top: -1 * $header-default-height;
-}
+// main {
+//   margin-top: -1 * $header-default-height;
+// }
 
-.header.invert {
+.header.invert,
+body.ReactModal__Body--open {
   .header-brand svg {
+    transition: all .6s cubic-bezier(0.165, 0.840, 0.440, 1.000);
     fill: theme("colors.white");
   }
 
   .btn-menu svg,
   .header-back-btn svg {
+    transition: all .6s cubic-bezier(0.165, 0.840, 0.440, 1.000);
     fill: theme("colors.gray.100");
   }
 }
