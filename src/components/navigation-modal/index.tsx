@@ -41,12 +41,14 @@ class NavigationModal extends React.Component {
   render() {
     return (
       <>
-        <Hamburger
-          onClick={this.toggleModal}
-          classes={classNames("btn-menu ml-auto hamburger--elastic", {
-            active: this.state.showModal,
-          })}
-        />
+        <div className="btn-menu ml-auto">
+          <Hamburger
+            onClick={this.toggleModal}
+            classes={classNames("hamburger-btn", {
+              active: this.state.showModal,
+            })}
+          />
+        </div>
 
         <Modal
           isOpen={this.state.showModal}

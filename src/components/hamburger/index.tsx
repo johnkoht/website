@@ -18,9 +18,9 @@ const Hamburger = ({ id, classes, onClick }: HamburgerProps) => {
       className={classNames("hamburger ", classes)}
       type="button"
     >
-      <span className="hamburger-box">
-        <span className="hamburger-inner"></span>
-      </span>
+      <span className="hamburger-top"></span>
+      <span className="hamburger-middle"></span>
+      <span className="hamburger-bottom"></span>
     </button>
   )
 }
