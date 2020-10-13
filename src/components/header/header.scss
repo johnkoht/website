@@ -44,17 +44,10 @@ header.header {
     &:hover svg {
       transition: all .4s cubic-bezier(0.165, 0.840, 0.440, 1.000);
       transform: scale(1.065, 1.065);
-      // -webkit-filter: drop-shadow( 0 15px 20px rgba(#DEEDF7, .5));
-      // filter: drop-shadow( 0 10px 20px 3px rgba(#133c55, .5));
-
       fill: theme("colors.navy");
     }
   }
 }
-
-// main {
-//   margin-top: -1 * $header-default-height;
-// }
 
 .header.invert,
 body.ReactModal__Body--open {
