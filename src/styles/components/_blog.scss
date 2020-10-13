@@ -1,12 +1,16 @@
 $content-max-width: 660px;
 
 .layout-blog {
-  @apply bg-white;
+  @apply bg-gray-100;
   @apply pt-32;
 
   @screen md {
     @apply pt-48;
   }
+}
+
+.layout-post {
+  @apply bg-white;
 }
 
 .blog-post {

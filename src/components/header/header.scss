@@ -22,9 +22,21 @@ header.header {
     z-index: 1099;
   }
 
-  .header-back-btn svg {
-    fill: theme("colors.gray.800");
-    max-width: 100%;
+  .header-back-btn {
+    svg {
+      @apply transition-all;
+      @apply duration-300;
+      @apply ease-jk-custom;
+      fill: theme("colors.gray.600");
+      max-width: 100%;
+    }
+
+    &:hover svg {
+      @apply transition-all;
+      @apply duration-500;
+      @apply ease-jk-custom;
+      fill: theme("colors.gray.800");
+    }
   }
 
   .header-brand {
@@ -44,7 +56,7 @@ header.header {
     &:hover svg {
       transition: all .4s cubic-bezier(0.165, 0.840, 0.440, 1.000);
       transform: scale(1.065, 1.065);
-      fill: theme("colors.navy");
+      fill: theme("colors.gray.800");
     }
   }
 }
@@ -56,7 +68,6 @@ body.ReactModal__Body--open {
     fill: theme("colors.white");
   }
 
-  .btn-menu svg,
   .header-back-btn svg {
     transition: all .6s cubic-bezier(0.165, 0.840, 0.440, 1.000);
     fill: theme("colors.gray.100");
