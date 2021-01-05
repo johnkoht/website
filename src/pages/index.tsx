@@ -50,7 +50,7 @@ const IndexPage = ({ data }) => (
     <div className="hero homepage-hero bg-gray-100 flex justify-center">
       <div className="max-w-6xl px-4 sm:px-8 lg:px-0 hero-content">
         <h1>
-          Hi, I’m John Koht, a full-stack product builder
+          Hi, I’m John Koht, a full-stack product leader
           <br className="hidden lg:block" /> from Chicago with experience
           building
           <br className="hidden lg:block" /> impactful products &amp; teams.
