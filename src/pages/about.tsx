@@ -90,7 +90,7 @@ export const query = graphql`
 const AboutPage = ({ data }) => {
   const posts = data.allMarkdownRemark.nodes
 
-  toSentence = function(arr) {
+  const toSentence = function(arr) {
     return arr.join(", ").replace(/,\s([^,]+)$/, ' and $1');
   };
 
