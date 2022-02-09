@@ -12,6 +12,10 @@ $ cd website
 $ yarn install
 ```
 
+## Setup Env
+1. Create a `.env.development` file in the root directory
+2. Add `API_URL=http://localhost:3100` (assume you're using the API app)
+
 ## Development
 
 To start the server, run:

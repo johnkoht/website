@@ -90,12 +90,16 @@ export const query = graphql`
 const AboutPage = ({ data }) => {
   const posts = data.allMarkdownRemark.nodes
 
+  toSentence = function(arr) {
+    return arr.join(", ").replace(/,\s([^,]+)$/, ' and $1');
+  };
+
   let kidsString
   if (data.about.family.kids.length) {
-    let kids = data.about.family.kids
-    let lastName = kids[0].last_name
-    let firstNames = kids.map(kid => kid.first_name)
-    kidsString = `${firstNames.join(", ")} ${lastName}`
+    let kids        = data.about.family.kids
+    let lastName    = kids[0].last_name
+    let firstNames  = kids.map(kid => kid.first_name)
+    kidsString = toSentence(firstNames);
   }
 
   return (
