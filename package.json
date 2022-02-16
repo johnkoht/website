@@ -3,7 +3,7 @@
   "private": true,
   "description": "My personal website.",
   "version": "0.1.0",
-  "author": "John Koht <john.koht@hey.com>",
+  "author": "John Koht <john.koht@gmail.com>",
   "dependencies": {
     "axios": "^0.20.0",
     "classnames": "^2.2.6",
