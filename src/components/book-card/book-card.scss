@@ -1,0 +1,65 @@
+.book-card {
+  @apply bg-white;
+  @apply shadow-md;
+  @apply rounded;
+  @apply transition-all;
+  @apply duration-200;
+  @apply ease-jk-custom;
+  position: relative;
+
+  .book-card-stripe {
+    @apply bg-yellow;
+    @apply rounded-t;
+    position: absolute;
+    height: 6px;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  a.link-arrow {
+    color: theme("colors.yellow.default");
+
+    &:after {
+      background-color: theme("colors.yellow.default");
+    }
+
+    svg {
+      fill: theme("colors.yellow.default");
+    }
+  }
+
+  &.book-read-true {
+    .book-card-stripe {
+      @apply bg-blue;
+    }
+
+    a.link-arrow {
+      color: theme("colors.blue.default");
+
+      &:after {
+        background-color: theme("colors.blue.default");
+      }
+
+      svg {
+        fill: theme("colors.blue.default");
+      }
+    }
+  }
+
+}
+
+.book-legend {
+  @apply inline-block;
+  height: 12px;
+  width: 12px;
+  border-radius: 6px;
+}
+
+.book-legend-unread {
+  @apply bg-yellow;
+}
+
+.book-legend-read {
+  @apply bg-blue;
+}
