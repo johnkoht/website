@@ -183,6 +183,24 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-source-custom-api",
+      options: {
+        url: `${process.env.API_URL}/books`,
+        rootKey: "books",
+        schemas: {
+          book: `
+            title: String
+            subtitle: String
+            author: String
+            edition: String
+            read: Boolean
+            recommend: String
+            links: [links]
+          `,
+        },
+      },
+    },
+    {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
