@@ -72,7 +72,7 @@ module.exports = {
     {
       resolve: "gatsby-source-custom-api",
       options: {
-        url: `${process.env.API_URL}/work`,
+        url: "https://raw.githubusercontent.com/johnkoht/api/master/endpoints/work.json",
         rootKey: "work",
         schemas: {
           work: `
@@ -96,7 +96,7 @@ module.exports = {
     {
       resolve: "gatsby-source-custom-api",
       options: {
-        url: `${process.env.API_URL}/photos`,
+        url: "https://raw.githubusercontent.com/johnkoht/api/master/endpoints/photos.json",
         rootKey: "photos",
         schemas: {
           photo: `
@@ -111,7 +111,7 @@ module.exports = {
     {
       resolve: "gatsby-source-custom-api",
       options: {
-        url: `${process.env.API_URL}/about`,
+        url: "https://raw.githubusercontent.com/johnkoht/api/master/endpoints/about.json",
         rootKey: "about",
         schemas: {
           about: `
@@ -170,7 +170,7 @@ module.exports = {
     {
       resolve: "gatsby-source-custom-api",
       options: {
-        url: `${process.env.API_URL}/blog_posts`,
+        url: "https://raw.githubusercontent.com/johnkoht/api/master/endpoints/blog_posts.json",
         rootKey: "blog_posts",
         schemas: {
           photo: `
@@ -185,7 +185,7 @@ module.exports = {
     {
       resolve: "gatsby-source-custom-api",
       options: {
-        url: `${process.env.API_URL}/books`,
+        url: "https://raw.githubusercontent.com/johnkoht/api/master/endpoints/books.json",
         rootKey: "books",
         schemas: {
           book: `
