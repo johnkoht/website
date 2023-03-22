@@ -72,7 +72,7 @@ module.exports = {
     {
       resolve: "gatsby-source-custom-api",
       options: {
-        url: "https://raw.githubusercontent.com/johnkoht/api/master/endpoints/work.json",
+        url: "https://johnkoht.github.io/api/endpoints/work.json",
         rootKey: "work",
         schemas: {
           work: `
@@ -96,7 +96,7 @@ module.exports = {
     {
       resolve: "gatsby-source-custom-api",
       options: {
-        url: "https://raw.githubusercontent.com/johnkoht/api/master/endpoints/photos.json",
+        url: "https://johnkoht.github.io/api/endpoints/photos.json",
         rootKey: "photos",
         schemas: {
           photo: `
@@ -111,7 +111,7 @@ module.exports = {
     {
       resolve: "gatsby-source-custom-api",
       options: {
-        url: "https://raw.githubusercontent.com/johnkoht/api/master/endpoints/about.json",
+        url: "https://johnkoht.github.io/api/endpoints/about.json",
         rootKey: "about",
         schemas: {
           about: `
@@ -170,31 +170,13 @@ module.exports = {
     {
       resolve: "gatsby-source-custom-api",
       options: {
-        url: "https://raw.githubusercontent.com/johnkoht/api/master/endpoints/blog_posts.json",
-        rootKey: "blog_posts",
-        schemas: {
-          photo: `
-            id: String
-            url: String
-            title: String
-            summary: String
-          `,
-        },
-      },
-    },
-    {
-      resolve: "gatsby-source-custom-api",
-      options: {
-        url: "https://raw.githubusercontent.com/johnkoht/api/master/endpoints/books.json",
+        url: "https://johnkoht.github.io/api/endpoints/books.json",
         rootKey: "books",
         schemas: {
           book: `
             title: String
             subtitle: String
             author: String
-            edition: String
-            read: Boolean
-            recommend: String
             links: [links]
           `,
         },
