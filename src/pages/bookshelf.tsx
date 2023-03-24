@@ -32,7 +32,7 @@ export const query = graphql`
 const Bookshelf = ({data}) => {
   return (
     <Layout className="layout-blog">
-      <SEO title="Blog" />
+      <SEO title="Bookshelf" />
 
       <div class="container mx-auto pb-16 md:pb-32">
         <div className="mb-10 lg:mb-20 max-w-3xl mx-auto text-center">
