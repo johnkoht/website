@@ -56,7 +56,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`Merriweather\:300,400`, `Open Sans\:300,400,700,800,900`],
+        fonts: [`Merriweather\:300,400`, `Open Sans\:300,400,500,700,800,900`],
         display: "swap",
       },
     },
@@ -177,6 +177,9 @@ module.exports = {
             title: String
             subtitle: String
             author: String
+            edition: String
+            read: String
+            recommend: String
             links: [links]
           `,
         },

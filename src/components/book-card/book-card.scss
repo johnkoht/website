@@ -63,3 +63,17 @@
 .book-legend-read {
   @apply bg-blue;
 }
+
+.book-card-edition {
+  vertical-align: middle;
+  font-size: 14px;
+  position: absolute;
+  margin-top: -40px;
+
+  span.edition-icon {
+    display: inline-block;
+    margin-right: 8px;
+    text-align: center;
+    vertical-align: middle;
+  }
+}
