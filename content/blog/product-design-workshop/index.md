@@ -47,8 +47,8 @@ An agreed upon timeline is next. How much time is available to build and launch 
 Who is involved in the project? During the workshop, we'll identify the key players including your team and ours. We'll identify the following roles:
 
 - **Stakeholders** (executive sponsors, project managers, etc)
-- **Subject Matter Experts **(business area experts)
-- **Builders **(product managers, designers, developers)
+- **Subject Matter Experts** (business area experts)
+- **Builders** (product managers, designers, developers)
 - **End Users** (actual users of the new product)
 
 Understanding these roles will help us all build alignment on key decisions and insights.
