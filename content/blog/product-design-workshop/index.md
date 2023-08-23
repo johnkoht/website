@@ -109,7 +109,7 @@ There are always more ideas than time and money, and this is our opportunity to 
 
 Here's what a story map that has been sliced into releases looks like:
 
-![Story map with defined releases](./Storymap----release-plan.jpg)
+![Story map with defined releases](./Storymap-release-plan.jpg)
 
 ## The Outcome
 
